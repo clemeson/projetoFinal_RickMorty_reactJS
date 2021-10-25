@@ -7,11 +7,21 @@ const FooterContainer = styled.footer`
 
 `
 
-function Footer(){
+const Description = styled.p`
+
+
+`
+
+function Footer() {
     return (
 
         <>
-        <FooterContainer></FooterContainer>
+            <FooterContainer>
+                <Description>
+
+                </Description>
+
+            </FooterContainer>
         </>
     )
 }

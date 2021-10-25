@@ -8,13 +8,15 @@ import Personagens from './pages/characters/PersonagensComponent'
 import Location from './pages/location/LocationComponent'
 
 
+
+
 function App() {
   return (
     <>
     <BrowserRouter>
     <Header link = {Link}></Header>
     
-    <Footer />
+  
 
 
 
@@ -37,7 +39,7 @@ function App() {
     </Switch>
 
 
-
+    <Footer />
     </BrowserRouter>
     </>
   );
