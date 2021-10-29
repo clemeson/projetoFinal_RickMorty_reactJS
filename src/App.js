@@ -29,11 +29,11 @@ function App() {
         <Personagens></Personagens>
       </Route>
 
-      <Route path="/sobre">
+      <Route path="/historias">
         <Sobre></Sobre>
       </Route>
 
-    <Route path="/localizacao">
+    <Route path="/planetas">
       <Location></Location>
     </Route>
     </Switch>

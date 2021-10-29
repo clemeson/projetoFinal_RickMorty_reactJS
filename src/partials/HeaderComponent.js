@@ -49,16 +49,16 @@ function Header(props) {
             <Nav>
                 <Ul>
                     <li>
-                        <props.link to="/" style={{textDecoration: 'none'}}></props.link>
+                        <props.link to="/" style={{textDecoration: 'none'}}>Home</props.link>
                     </li>
                     <li>
                         <props.link to="/personagens">Personagens</props.link>
                     </li>
                     <li>
-                        <props.link to="/localizacao">Localização</props.link>
+                        <props.link to="/planetas">Planetas</props.link>
                     </li>
                     <li>
-                        <props.link to="/sobre">Sobre</props.link>
+                        <props.link to="/historias">Historias</props.link>
                     </li>
 
                 </Ul>
