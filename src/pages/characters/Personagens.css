@@ -1,0 +1,46 @@
+
+
+.rec-slider-container{
+    display: flex;
+    padding: 12px 0;
+}
+
+
+.rec-carousel{
+    height: 310px;
+}
+
+
+.rec-carousel-item{
+    padding-bottom: 10px;
+}
+.rec-carousel-item:hover{
+    transform: scale(1.1);
+}
+
+.rec{
+    transition: all 0.3s ease-out;
+    margin-bottom: 10px;
+}
+
+button.rec-dot{
+    background-color: rgb(10, 112, 56);
+    box-shadow: 0 0 1px 3px rgba(9, 197, 66, 0.5);
+    width: 20px;
+    height: 20px;
+  }
+  
+  button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus  {
+    box-shadow: 0 0 1px 3px rgba(0, 255, 106, 0.5);
+  }
+
+
+  button.rec-arrow{
+    background-color: rgb(10, 112, 56);
+    box-shadow: 0 0 1px 3px rgba(9, 197, 66, 0.5);
+  }
+
+
+  button.rec-arrow:hover{
+    box-shadow: 0 0 1px 3px rgba(0, 255, 106, 0.5);
+  }
