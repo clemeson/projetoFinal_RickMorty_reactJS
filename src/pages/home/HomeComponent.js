@@ -1,11 +1,11 @@
 import React from "react";
-
+import './index.css';
 function Home(){
 
 
     return (
 
-        <h1>Pagina home</h1>
+        <h1 className="nome">Rick And Morty</h1>
     )
 }
 
