@@ -6,12 +6,27 @@ import {createGlobalStyle} from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   @import url ('https://fonts.googleapis.com/css2? family = M + PLUS + Arredondado + 1c: wght @ 500 & display = swap');
   
-  body{
-    background-image: radial-gradient(circle, #601281, #491467, #35124d, #230e34, #14031c);
-    /*
-    background-image: radial-gradient(circle, #9b08da, #7217a7, #4e1776, #2e1247, #14031c);
-    */
-  }
+body{
+animation: gradient 10s ease alternate infinite;
+background-image: radial-gradient(circle, #1b0126, #1a0124, #190223, #180221, #17021f);no-repeat;
+background-size: 300% 300%;
+font-family: sans-serif;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+
+@keyframes gradient{
+    from{
+        background-position: 0 50%;
+    }
+    to{
+        background-position: 100% 50%;
+    }
+    
+}
+}
   
   @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
@@ -24,7 +39,6 @@ const GlobalStyle = createGlobalStyle`
 
 
 `
-
 
 
 ReactDOM.render(

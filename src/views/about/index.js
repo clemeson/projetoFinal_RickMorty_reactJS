@@ -1,13 +1,14 @@
-import React, {useState, useEffect} from "react";
+import React from 'react'
+import Header from '../../components/HeaderComponent'
 
    
 
 
 function Sobre(){
     return(
-        <div>
-            <h2>sOBRE</h2>
-        </div>
+       <>
+       <Header />
+       </>
     )
 }
 
