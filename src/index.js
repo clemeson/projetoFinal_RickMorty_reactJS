@@ -6,6 +6,12 @@ import {createGlobalStyle} from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   @import url ('https://fonts.googleapis.com/css2? family = M + PLUS + Arredondado + 1c: wght @ 500 & display = swap');
   
+  #root{
+    display:flex;
+    height: 100vh;
+    width:100vh
+  }
+
 body{
 animation: gradient 10s ease alternate infinite;
 background-image: radial-gradient(circle, #1b0126, #1a0124, #190223, #180221, #17021f);no-repeat;

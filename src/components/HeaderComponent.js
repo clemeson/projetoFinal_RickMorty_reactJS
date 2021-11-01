@@ -6,6 +6,8 @@ const HeaderContainer = styled.header`
     display:flex;
     height:100px;
     color:white;
+    width:70%
+    height:100vh;
 
 
 `
@@ -30,7 +32,7 @@ const Ul = styled.ul`
       a{
 
      
-          color:#090311;
+          color:white;
           text-decoration:none;
       }
     }

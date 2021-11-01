@@ -1,4 +1,5 @@
 import React from "react";
+import Header from '../../components/HeaderComponent'
 
 /*
 
@@ -22,7 +23,7 @@ function Location(){
     
     return (
         <>
-    
+            <Header></Header>
             <h1>Location</h1>
         </>
     )
