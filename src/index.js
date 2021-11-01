@@ -4,6 +4,7 @@ import App from './App';
 import {createGlobalStyle} from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+  @import url ('https://fonts.googleapis.com/css2? family = M + PLUS + Arredondado + 1c: wght @ 500 & display = swap');
   
   body{
     background-image: radial-gradient(circle, #601281, #491467, #35124d, #230e34, #14031c);

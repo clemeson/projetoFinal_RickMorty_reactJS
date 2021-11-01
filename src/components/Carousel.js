@@ -7,8 +7,8 @@ function CarouselComponent(props){
 
 
     return(
-        <Carousel itemsToShow={7}>
-          {props.imagens.map((item, index)=>(
+        <Carousel itemsToShow={4} >
+          {props.imagens.map((item, index)=>(   
               <img key={index} src={item.image} />
           ))}
         </Carousel>
@@ -17,3 +17,6 @@ function CarouselComponent(props){
 
 
 export default CarouselComponent
+
+
+

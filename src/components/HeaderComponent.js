@@ -1,5 +1,6 @@
 import React from "react";
 import styled from 'styled-components'
+import { Link } from "react-router-dom";
 
 const HeaderContainer = styled.header`
     display:flex;
@@ -38,7 +39,7 @@ const Ul = styled.ul`
 
 
 
-function Header(props) {
+function Header() {
 
 
 
@@ -48,18 +49,13 @@ function Header(props) {
         <HeaderContainer>
             <Nav>
                 <Ul>
-                    <li>
-                        <props.link to="/" style={{textDecoration: 'none'}}>Home</props.link>
-                    </li>
-                    <li>
-                        <props.link to="/personagens">Personagens</props.link>
-                    </li>
-                    <li>
-                        <props.link to="/planetas">Planetas</props.link>
-                    </li>
-                    <li>
-                        <props.link to="/historias">Historias</props.link>
-                    </li>
+                <li>
+                    <Link to={'/'}>Home</Link>
+                    <Link to={'/character'}>Personagens</Link>
+                    <Link to={'/location'}>Planetas</Link>
+                    <Link to={'/about'}>Sobre</Link>
+                    <Link to={'/quemsomos'}>Quem Somos</Link>
+                </li>
 
                 </Ul>
             </Nav>
@@ -71,4 +67,4 @@ function Header(props) {
                 )
 }
 
-                export default Header;
+export default Header;
