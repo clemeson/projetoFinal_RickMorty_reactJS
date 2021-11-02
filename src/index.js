@@ -16,10 +16,6 @@ body{
 animation: gradient 10s ease alternate infinite;
 background-image: radial-gradient(circle, #1b0126, #1a0124, #190223, #180221, #17021f);no-repeat;
 background-size: 300% 300%;
-font-family: sans-serif;
-display: flex;
-align-items: center;
-justify-content: center;
 height: 100vh;
 
 }
