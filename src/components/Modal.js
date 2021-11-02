@@ -1,14 +1,83 @@
-import React from "react";
+import React,{useState} from "react";
+import { useEffect } from "react/cjs/react.development";
+import styled from 'styled-components'
 
-function ModalComponent(){
+
+const ModalBackground = styled.div`
+
+    position:fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    z-index:90;
+    background-color:rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+`
+
+const ModalContent = styled.div`
+
+    height:550px;
+    width:450px;
+    padding:20px 0 0 0;
+  
+    border-radius:5px;
+    background-color:#fff;
+
+    .container-content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    img{
+        border-radius:50%;
+    }
+    h1{
+        margin: 10px 0 10px 0;
+    }
+
+    h2{
+        margin:0 0 10px 0;
+    }
+
+    }    
+
+
+`
+
+function ModalComponent(props){
+
+    function hidenModal(){
+        props.setModal('')
+    }
 
 
     return(
-
         <>
-
+        {props.visible >=1 &&
+        <ModalBackground onClick={hidenModal}>
+            <ModalContent>
+               
+                {props.Persona.map((i,idx)=>(
+                    <div className="container-content">
+                    <img key={idx} src={i.image} />
+                    <h1 key={idx}>{i.name}</h1>
+                    <h2 key={idx}>Especie - {i.species}</h2>
+                    <h2 key={idx}>Status - {i.status}</h2>
+                    <h2 key={idx}>Genero - {i.gender}</h2>
+                   </div>
+                ))}
+            </ModalContent>
+        </ModalBackground>
+   
+        }
         </>
-
     )
 
 }
+
+export default ModalComponent

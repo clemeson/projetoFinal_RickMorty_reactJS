@@ -4,10 +4,10 @@ import App from './App';
 import {createGlobalStyle} from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-  @import url ('https://fonts.googleapis.com/css2? family = M + PLUS + Arredondado + 1c: wght @ 500 & display = swap');
+  @import url('https://fonts.googleapis.com/css2? family = M + PLUS + Arredondado + 1c: wght @ 500 & display = swap');
   
   #root{
-    display:flex;
+
     height: 100vh;
     width:100vh
   }
@@ -21,6 +21,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 height: 100vh;
+
 }
 
 @keyframes gradient{
@@ -41,8 +42,10 @@ height: 100vh;
     margin:0;
     padding:0;
     box-sizing:border-box;
+    
   }
 
+  
 
 `
 

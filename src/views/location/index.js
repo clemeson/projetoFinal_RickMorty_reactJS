@@ -1,30 +1,35 @@
-import React from "react";
-import Header from '../../components/HeaderComponent'
+import React,{ useState, useEffect} from "react";
+import './style.css'
+import api from '../../services/api'
+import CarouselComponent from '../../components/Carousel'
 
-/*
 
 
 
-    async function getApi(){
-        let res = await api.get('/location/')
-        let json = res.data
-        setImagem(json)
-        console.log(imagem)
-    }
-
-    useEffect(()=>{
-        getApi()
-    }, [])
-
-*/
 
 
 function Location(){
+    const [planetas, setPlanetas] = useState([])
+
+    async function getPlanetas(){
+        let res = await api.get('/location/')
+        let json = res.data.results
+
+        setPlanetas(json)
+    }
+    useEffect(()=>{
+        getPlanetas()
+    },[])
     
+
     return (
         <>
-            <Header></Header>
+        {planetas.map((i, idx)=>(
+            <h1 key={idx}>{i.name}</h1>
+        ))}
+        <div className="container">
             <h1>Location</h1>
+        </div>
         </>
     )
 }

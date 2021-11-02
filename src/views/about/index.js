@@ -1,13 +1,30 @@
-import React from 'react'
-import Header from '../../components/HeaderComponent'
+import React,{useState, useEffect} from 'react'
+import CarouselComponent from '../../components/Carousel';
+import api from '../../services/api'
+
+
 
    
 
 
 function Sobre(){
+
+    const [imagem, setImagem] = useState([])
+
+    async function getImg(){
+        let response = await api.get('/character/')
+        let json = response.data.results
+        setImagem(json)
+    }
+
+    useEffect(()=>{
+        getImg()
+    },[])
+
+
     return(
        <>
-       <Header />
+       <CarouselComponent imagens={imagem} qtItems={5} />
        </>
     )
 }

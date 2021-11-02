@@ -1,5 +1,5 @@
-import React from "react";
-import Header from "../../components/HeaderComponent";
+import React from "react"
+import './style.css'
 
 function Home(){
 
@@ -7,7 +7,7 @@ function Home(){
     return (
 
         <>
-            <Header></Header>
+        <h1>Pagina home</h1>
         </>
     )
 }
