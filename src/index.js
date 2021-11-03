@@ -9,12 +9,12 @@ const GlobalStyle = createGlobalStyle`
   #root{
 
     height: 100vh;
-    width:100vh
+    width: 99.4vw;
   }
 
 body{
 animation: gradient 10s ease alternate infinite;
-background-image: radial-gradient(circle, #1b0126, #1a0124, #190223, #180221, #17021f);no-repeat;
+background-image: radial-gradient(circle, #1b0126, #1a0124, #190223, #180221, #17021f);
 background-size: 300% 300%;
 height: 100vh;
 
