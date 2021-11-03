@@ -30,12 +30,12 @@ function PageNotFound(){
     },[])
 
 
-    
+
 
 
     return(
 
-            <div></div>
+            <div>Pagina nao encontrada</div>
 
 
     )
