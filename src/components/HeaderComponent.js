@@ -8,7 +8,7 @@ const HeaderContainer = styled.header`
     color:white;
     left:0;
     width:70%;
-
+    
 
 `
 
