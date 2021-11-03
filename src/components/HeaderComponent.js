@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 const HeaderContainer = styled.header`
 
-    display:absolute;
     height:70px;
     color:white;
     left:0;
@@ -15,28 +14,28 @@ const HeaderContainer = styled.header`
 
     const Nav = styled.nav`
         width:100%;
-        display:flex:
-
-    color:white;
+        display:flex;
+    
+        color:white;
     `
 
     const Ul = styled.ul`
         width:100%;
         display:flex:
-        gap:1.2rem;
+        gap:0;
 
         
         
         li{
             font-size:1.2rem;
             display:flex;
-            gap:1rem;
+            
             list-style:none;
-            justify-content: space-between;
+           
 
         a{
 
-        
+            
             color:white;
             text-decoration:none;
         }
@@ -73,5 +72,6 @@ function Header() {
 
     )
 }
+
 
 export default Header;

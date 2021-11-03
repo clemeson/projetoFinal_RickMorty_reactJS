@@ -22,6 +22,8 @@ function CarouselComponent(props){
         <>
         <Carousel
          itemsToShow={props.qtItems}
+         
+        
         
          >
 
