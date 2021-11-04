@@ -4,7 +4,7 @@ import "./btn-style.css"
 export default function Btn(props) {
     return(
     <>
-        <a href='/'>
+        <a>
            <span></span>
            <span></span>
            <span></span>

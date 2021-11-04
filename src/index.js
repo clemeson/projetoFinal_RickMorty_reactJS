@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
   #root{
 
     height: 100vh;
-    width:100%;
+    width:70vw;
   }
 
 body{

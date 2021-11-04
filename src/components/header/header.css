@@ -6,12 +6,18 @@ header, ul {
     position: fixed;
     width: 100%;
 }
-a {
+.link a{
     text-decoration: none;
+    color:#74E452;
+    text-shadow: 0px 0px 10px #74E452, 0px 0px 3px #74E452;
+}
+
+.link a:hover{
+    color: #D705F2;
 }
 #logo{
     max-width: 200px;
-    height: 80px;
+    height: 100px;
     padding-bottom: 20px;
     margin-left: 20px;
 }
@@ -20,10 +26,11 @@ a {
 }
 #header{
     box-sizing: border-box;
-    height: 70px;
+    height: 80px;
     padding: 1rem;
     width: 100%;
     margin: -8px;
+    margin:10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,7 +42,7 @@ a {
     gap: 1.5rem;
 
 }
-#menu a{
+#menu .link{
     display: block;
     padding: .5rem;
 }
@@ -73,7 +80,7 @@ a {
         visibility: visible;
 
     }
-    #menu a{
+    #menu .link{
         padding: 1rem 0;
         margin: 0 1rem;
         
