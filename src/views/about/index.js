@@ -30,7 +30,7 @@ function Sobre(){
             <CarouselComponent imagens={imagem} qtItems={7}>
 
             </CarouselComponent>
-        
+            
         </>
     )
  

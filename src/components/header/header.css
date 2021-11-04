@@ -1,8 +1,10 @@
 header, ul {
     margin: 0px;
     padding: 0px;
-
-
+}
+#div-header{
+    position: fixed;
+    width: 100%;
 }
 .link a{
     text-decoration: none;
@@ -17,6 +19,7 @@ header, ul {
     max-width: 200px;
     height: 100px;
     padding-bottom: 20px;
+    margin-left: 20px;
 }
 #icon-menu{
     width: 50px;
@@ -25,6 +28,7 @@ header, ul {
     box-sizing: border-box;
     height: 80px;
     padding: 1rem;
+    width: 100%;
     margin: -8px;
     margin:10px;
     display: flex;
@@ -75,7 +79,7 @@ header, ul {
         right: 0px;
         height: 0px;
         transition: 0.6s;
-        background: rgba(0, 0, 0, 0.171);
+        background: rgba(0, 0, 0, 0.87);
         z-index: 1000;
         visibility: hidden;
         overflow-y: hidden;
