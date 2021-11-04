@@ -94,7 +94,7 @@ import LoadingComponent from "../../components/Loading";
 
         <EscolhaUmPersona></EscolhaUmPersona>
 
-                <CarouselComponent imagens={character}   qtItems={4} getId={handleImageId} />
+                <CarouselComponent imagens={character}   qtItems={5} getId={handleImageId} />
             <ModalComponent
              visible={showModal}
              setModal={setShowModal}

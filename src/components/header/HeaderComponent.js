@@ -32,7 +32,11 @@ const keyLine = keyframes`
 
 const keyLine2 = keyframes`
 0%{
+<<<<<<< HEAD
 
+=======
+    border-width: 2px solid #D705F2;
+>>>>>>> 1c1657d262892b06ad783b8418e4fd4d19028c2e
     width: 1%;
     transition: all 0.5s ease-out
 }
@@ -54,7 +58,11 @@ const keyLine2 = keyframes`
 const Hr = styled.hr`
     
     animation-name: ${keyLine};
+<<<<<<< HEAD
     animation-duration: .9s;
+=======
+    animation-duration: 1.2s;
+>>>>>>> 1c1657d262892b06ad783b8418e4fd4d19028c2e
     animation-timing-function: ease;
     border: 2px solid #74E452;
 
