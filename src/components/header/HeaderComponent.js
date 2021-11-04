@@ -56,9 +56,7 @@ const Hr = styled.hr`
     animation-name: ${keyLine};
     animation-duration: 1.2s;
     animation-timing-function: ease;
-    border: 2px solid #74E452;
-
-
+    border: 2px solid #39FF14;
     box-shadow: 0px 0px 35px #74E452, 0px 0px 15px #74E452 inset;
 
     
@@ -69,10 +67,9 @@ const Hr = styled.hr`
 
 const HrPurple = styled.hr`
 
-animation-name: ${keyLine2};
-animation-duration: 1.2s;
-border: 2px solid #D705F2;
-
+    animation-name: ${keyLine2};
+    animation-duration: 1.2s;
+    border: 2px solid #D705F2;
     box-shadow: 0px 0px 35px #D705F2, 0px 0px 15px #D705F2 inset;
 
 `
@@ -86,34 +83,34 @@ export default function Header() {
     }
 
     return(
-        <>
-        <header id='header'>
-            <img id='logo' src={Logo}></img>
-            <nav id='nav'>
+        <div id='div-header'>
+            <header id='header'>
+                <img id='logo' src={Logo}></img>
+                <nav id='nav'>
 
-                <button 
-                id='btn-menu' 
-                onClick= {toggleMenu}
-                ><img id='icon-menu' src={Icon}></img></button>
+                    <button 
+                    id='btn-menu' 
+                    onClick= {toggleMenu}
+                    ><img id='icon-menu' src={Icon}></img></button>
 
-                <ul id='menu'>
-                    <li>
-                    <Link className="link" to="/"><Btn text='Home'/></Link>
-                    </li>
-                    <li>
-                    <Link className="link" to="/character"><Btn text='Personagens'/></Link>
-                    </li>
-                    <li>
-                    <Link className="link" to="/location"><Btn text='Localização'/></Link>
-                    </li>
-                    <li>
-                    <Link className="link" to="/about"><Btn text='Sobre'/></Link>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <Hr></Hr>
-        <HrPurple></HrPurple>
-        </>
+                    <ul id='menu'>
+                        <li>
+                        <Link className="link" to="/"><Btn text='Home'/></Link>
+                        </li>
+                        <li>
+                        <Link className="link" to="/character"><Btn text='Personagens'/></Link>
+                        </li>
+                        <li>
+                        <Link className="link" to="/location"><Btn text='Localização'/></Link>
+                        </li>
+                        <li>
+                        <Link className="link" to="/about"><Btn text='Sobre'/></Link>
+                        </li>
+                    </ul>  
+                </nav>
+            </header>
+            <Hr></Hr>
+            <HrPurple></HrPurple>
+        </div>
     )
 }

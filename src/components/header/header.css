@@ -1,8 +1,10 @@
 header, ul {
     margin: 0px;
     padding: 0px;
-
-
+}
+#div-header{
+    position: fixed;
+    width: 100%;
 }
 a {
     text-decoration: none;
@@ -20,11 +22,12 @@ a {
     box-sizing: border-box;
     height: 70px;
     padding: 1rem;
+    width: 100%;
     margin: -8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgba(0, 0, 0, 0.171);
+    background: rgba(0, 0, 0, 0.377);
 }
 #menu{
     display: flex;
@@ -60,7 +63,7 @@ a {
         right: 0px;
         height: 0px;
         transition: 0.6s;
-        background: rgba(0, 0, 0, 0.171);
+        background: rgba(0, 0, 0, 0.87);
         z-index: 1000;
         visibility: hidden;
         overflow-y: hidden;
