@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
 
 body{
 animation: gradient 10s ease alternate infinite;
-background-image: radial-gradient(circle, #1b0126, #1a0124, #190223, #180221, #17021f);no-repeat;
+background-image: radial-gradient(circle, #1b0126, #270838, #37094c, #48075f, #5a0273);
 background-size: 300% 300%;
 height: 100vh;
 

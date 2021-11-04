@@ -15,18 +15,23 @@ const ModalBackground = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    color:white;
 
 
 `
 
-const ModalContent = styled.div`
+  const ModalContent = styled.div`
 
     height:550px;
     width:450px;
-    padding:20px 0 0 0;
+    padding:30px 0 0 0;
   
     border-radius:5px;
-    background-color:#fff;
+    background-color: #1B0126;
+    box-shadow: 0px 0px 35px #74E452, 0px 0px 15px #74E452 inset;
+    border: 10px solid #74E452;
+    
+    
 
     .container-content{
     display:flex;
@@ -35,13 +40,14 @@ const ModalContent = styled.div`
 
     img{
         border-radius:50%;
+        width: 180px
     }
     h1{
-        margin: 10px 0 10px 0;
+        margin: 20px 0 10px 0;
     }
 
     h2{
-        margin:0 0 10px 0;
+        margin:0 0 20px 0;
     }
 
     }    
@@ -79,5 +85,6 @@ function ModalComponent(props){
     )
 
 }
+
 
 export default ModalComponent

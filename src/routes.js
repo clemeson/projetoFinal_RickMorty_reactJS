@@ -5,6 +5,7 @@ import Personagens from "./views/characters";
 import Sobre from "./views/about";
 import Location from "./views/location";
 import Home from "./views/home";
+import PageNotFound from './views/notfound/index'
 
  function Routes(){
 
@@ -15,9 +16,10 @@ import Home from "./views/home";
                          <Switch>
 
                               <Route path="/" exact component={Home} />
-                              <Route path="/character" exact component={Personagens} />
-                              <Route path="/location" exact component={Location} />
-                              <Route path="/about" exact component={Sobre} />
+                              <Route path="/character"  component={Personagens} />
+                              <Route path="/location"  component={Location} />
+                              <Route path="/about"  component={Sobre} />
+                              <Route path="*"  component={PageNotFound} />
                             
                         </Switch>
 

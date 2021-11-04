@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import CarouselComponent from '../../components/Carousel'
-import ModalComponent from '../../components/Modal'
+import CarouselComponent from '../../components/Carousel';
+import ModalComponent from '../../components/Modal';
 import api from "../../services/api";
-import './style.css'
-
+import './style.css';
+import LoadingComponent from "../../components/Loading";
 
 
 
@@ -14,20 +14,34 @@ import './style.css'
 
 
     const [character, setCharacter] = useState([])
+    const [id, setId] = useState('')
+    const [showModal, setShowModal] = useState('')
+    const [loading, setLoading] = useState(false)
+    const [persona, setPersona] = useState([])
 
 
 
     async function getApi() {
+
+    
         let res = await api.get('/character/');
+        setLoading(false)
+        
         let json = res.data.results
+
         setCharacter(json)
+        
     }
 
     useEffect(() => {
-        getApi()
+        setLoading(true)
+        setTimeout(()=>{
+            getApi()
+        },1000)
+       
     }, [])
 
-    const [id, setId] = useState('')
+
 
 
     function handleImageId(imgID) {
@@ -37,14 +51,13 @@ import './style.css'
 
     }
     
-    const [showModal, setShowModal] = useState('')
 
 
     useEffect(() => {
         setShowModal(id)
     }, [id])
 
-    const [persona, setPersona] = useState([])
+
 
 
     function get(per){
@@ -59,10 +72,29 @@ import './style.css'
         get(character)
     }, [id])
 
+    function EscolhaUmPersona(){
+        return(
+            <div className="container-welcome">
+                <h1>Escolha um personagem, clikando na foto</h1>
+            </div>
+
+
+        )
+    }
+
     return (
         <>
+        
+        {loading &&
+        
+            <LoadingComponent><h1 className="loading">Loading...</h1></LoadingComponent>
 
-            <CarouselComponent imagens={character} qtItems={5} getId={handleImageId} />
+
+        }
+
+        <EscolhaUmPersona></EscolhaUmPersona>
+
+                <CarouselComponent imagens={character}   qtItems={4} getId={handleImageId} />
             <ModalComponent
              visible={showModal}
              setModal={setShowModal}

@@ -1,20 +1,22 @@
 import React,{useState, useEffect} from 'react'
 import CarouselComponent from '../../components/Carousel';
-import "./style.css"
+import "./style/style.css"
+import "./style/responsividade.css"
+import "./style/carousel.css"
 import api from '../../services/api'
-import styled from 'styled-components';
 
-   
+  
 
 
 function Sobre(){
 
     const [imagem, setImagem] = useState([])
-
-    async function getImg(){
-        let response = await api.get('/character/')
-        let json = response.data.results
-        setImagem(json)
+     
+       async function getImg(){
+       let response = await api.get('/character/')
+       let json = response.data.results
+       setImagem(json)
+    
     }
 
     useEffect(()=>{
@@ -40,10 +42,13 @@ function Sobre(){
                     </p>
                 </div>
             </section>
+            <div id="carousel">
+                <CarouselComponent imagens={imagem} qtItems={5} />
+            </div>
         </main>
-       <CarouselComponent imagens={imagem} qtItems={5} />
        </>
     )
+ 
 }
 
 export default Sobre;
