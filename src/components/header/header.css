@@ -1,6 +1,7 @@
 header, ul {
     margin: 0px;
     padding: 0px;
+
 }
 #div-header{
     position: fixed;
@@ -20,12 +21,13 @@ header, ul {
     height: 100px;
     padding-bottom: 20px;
     margin-left: 20px;
+
 }
 #icon-menu{
     width: 50px;
 }
 #header{
-    box-sizing: border-box;
+
     height: 80px;
     padding: 1rem;
     width: 100%;
@@ -35,6 +37,7 @@ header, ul {
     align-items: center;
     justify-content: space-between;
     background: rgba(0, 0, 0, 0.377);
+
 }
 #menu{
     display: flex;
@@ -55,6 +58,7 @@ header, ul {
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;  
+
 }
 
 @media (max-width: 600px) {
@@ -70,7 +74,11 @@ header, ul {
         right: 0px;
         height: 0px;
         transition: 0.6s;
+
         background: rgba(0, 0, 0, 0.87);
+
+        background: rgba(0, 0, 0, 0.87);
+
         z-index: 1000;
         visibility: hidden;
         overflow-y: hidden;

@@ -26,7 +26,7 @@ function CarouselComponent(props){
         
         
          >
-
+            
           {props.imagens.map((item, index)=>(   
               <img key={index} src={item.image}  onClick={(e)=>setHandleId(index +1)}/>
             

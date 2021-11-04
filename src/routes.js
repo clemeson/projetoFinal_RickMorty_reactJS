@@ -1,6 +1,5 @@
 import React from "react";
 import { Switch, Route} from "react-router-dom";
-
 import Personagens from "./views/characters";
 import Sobre from "./views/about";
 import Location from "./views/location";
