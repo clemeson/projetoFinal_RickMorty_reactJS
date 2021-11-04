@@ -3,6 +3,7 @@ import React from "react";
 import {Link} from 'react-router-dom'
 import './header.css'
 import Btn from "./btn/Btn";
+<<<<<<< HEAD
 import Logo from './img/logo_rick.png';
 import Icon from './img/icon-menu.svg';
 import styled, {keyframes} from 'styled-components';
@@ -81,6 +82,10 @@ const HrPurple = styled.hr`
     box-shadow: 0px 0px 35px #D705F2, 0px 0px 15px #D705F2 inset;
 
 `
+=======
+import Logo from './img/logo_rick.png'
+import Icon from './img/icon-menu.svg'
+>>>>>>> 0647c569f46e1ffc7de4b3a7c6cbeeffb10f6c07
 
 
 export default function Header() {
@@ -91,6 +96,7 @@ export default function Header() {
     }
 
     return(
+<<<<<<< HEAD
         <div id='div-header'>
             <header id='header'>
                 <img id='logo' src={Logo}></img>
@@ -120,5 +126,32 @@ export default function Header() {
             <Hr></Hr>
             <HrPurple></HrPurple>
         </div>
+=======
+        <header id='header'>
+            <img id='logo' src={Logo}></img>
+            <nav id='nav'>
+
+                <button 
+                id='btn-menu' 
+                onClick= {toggleMenu}
+                ><img id='icon-menu' src={Icon}></img></button>
+
+                <ul id='menu'>
+                    <li>
+                    <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                    <Link to="/character">Personagens</Link>
+                    </li>
+                    <li>
+                    <Link to="/locations">Planetas</Link>
+                    </li>
+                    <li>
+                    <Link to="/about">Sobre</Link>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+>>>>>>> 0647c569f46e1ffc7de4b3a7c6cbeeffb10f6c07
     )
 }

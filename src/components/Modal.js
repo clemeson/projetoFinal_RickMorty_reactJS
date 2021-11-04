@@ -31,7 +31,11 @@ const ModalBackground = styled.div`
     box-shadow: 0px 0px 35px #74E452, 0px 0px 15px #74E452 inset;
     border: 10px solid #74E452;
     
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 0647c569f46e1ffc7de4b3a7c6cbeeffb10f6c07
 
     .container-content{
     display:flex;

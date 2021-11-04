@@ -1,6 +1,7 @@
 header, ul {
     margin: 0px;
     padding: 0px;
+<<<<<<< HEAD
 }
 #div-header{
     position: fixed;
@@ -20,12 +21,25 @@ header, ul {
     height: 100px;
     padding-bottom: 20px;
     margin-left: 20px;
+=======
+
+
+}
+a {
+    text-decoration: none;
+}
+#logo{
+    max-width: 200px;
+    height: 80px;
+    padding-bottom: 20px;
+>>>>>>> 0647c569f46e1ffc7de4b3a7c6cbeeffb10f6c07
 }
 #icon-menu{
     width: 50px;
 }
 #header{
     box-sizing: border-box;
+<<<<<<< HEAD
     height: 80px;
     padding: 1rem;
     width: 100%;
@@ -34,6 +48,15 @@ header, ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+=======
+    height: 70px;
+    padding: 1rem;
+    margin: -8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.171);
+>>>>>>> 0647c569f46e1ffc7de4b3a7c6cbeeffb10f6c07
 }
 #menu{
     display: flex;
@@ -41,7 +64,11 @@ header, ul {
     gap: 1.5rem;
 
 }
+<<<<<<< HEAD
 #menu .link{
+=======
+#menu a{
+>>>>>>> 0647c569f46e1ffc7de4b3a7c6cbeeffb10f6c07
     display: block;
     padding: .5rem;
 }
@@ -54,6 +81,7 @@ header, ul {
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+<<<<<<< HEAD
     text-shadow: 0px 0px 10px #74E452, 0px 0px 3px #74E452;
 }
 #btn-menu:hover{
@@ -64,6 +92,18 @@ header, ul {
     0 0 40px #D705F2,
     0 0 80px #D705F2;
    
+=======
+    color: #2196f3;
+}
+#btn-menu:hover{
+    color: #255784;
+    background: #2196f3;
+    box-shadow:
+    0 0 10px #2196f3, 
+    0 0 40px #2196f3,
+    0 0 80px #2196f3;
+    transition-delay: 0.1s;
+>>>>>>> 0647c569f46e1ffc7de4b3a7c6cbeeffb10f6c07
 }
 
 @media (max-width: 600px) {
@@ -79,7 +119,11 @@ header, ul {
         right: 0px;
         height: 0px;
         transition: 0.6s;
+<<<<<<< HEAD
         background: rgba(0, 0, 0, 0.87);
+=======
+        background: rgba(0, 0, 0, 0.171);
+>>>>>>> 0647c569f46e1ffc7de4b3a7c6cbeeffb10f6c07
         z-index: 1000;
         visibility: hidden;
         overflow-y: hidden;
@@ -89,7 +133,11 @@ header, ul {
         visibility: visible;
 
     }
+<<<<<<< HEAD
     #menu .link{
+=======
+    #menu a{
+>>>>>>> 0647c569f46e1ffc7de4b3a7c6cbeeffb10f6c07
         padding: 1rem 0;
         margin: 0 1rem;
         

@@ -9,15 +9,23 @@ const GlobalStyle = createGlobalStyle`
   #root{
 
     height: 100vh;
+<<<<<<< HEAD
     width:60%;
     margin:0 auto;
 
    
+=======
+    width:100%;
+>>>>>>> 0647c569f46e1ffc7de4b3a7c6cbeeffb10f6c07
   }
 
 body{
 animation: gradient 10s ease alternate infinite;
+<<<<<<< HEAD
 background: radial-gradient(circle, rgba(45,1,64,1) 0%, rgba(1,0,13,1) 100%);
+=======
+background-image: radial-gradient(circle, #1b0126, #270838, #37094c, #48075f, #5a0273);
+>>>>>>> 0647c569f46e1ffc7de4b3a7c6cbeeffb10f6c07
 background-size: 300% 300%;
 height: 100vh;
 
