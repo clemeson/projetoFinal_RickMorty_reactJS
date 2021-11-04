@@ -10,8 +10,6 @@ const GlobalStyle = createGlobalStyle`
 
     height: 100vh;
     width:99.4vw;
-
-   
   }
 
 body{
