@@ -1,8 +1,10 @@
 header, ul {
     margin: 0px;
     padding: 0px;
-
-
+}
+#div-header{
+    position: fixed;
+    width: 100%;
 }
 a {
     text-decoration: none;
@@ -11,6 +13,7 @@ a {
     max-width: 200px;
     height: 80px;
     padding-bottom: 20px;
+    margin-left: 20px;
 }
 #icon-menu{
     width: 50px;
@@ -19,11 +22,12 @@ a {
     box-sizing: border-box;
     height: 70px;
     padding: 1rem;
+    width: 100%;
     margin: -8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgba(0, 0, 0, 0.171);
+    background: rgba(0, 0, 0, 0.377);
 }
 #menu{
     display: flex;
@@ -43,17 +47,7 @@ a {
     border: none;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    color: #2196f3;
-}
-#btn-menu:hover{
-    color: #255784;
-    background: #2196f3;
-    box-shadow:
-    0 0 10px #2196f3, 
-    0 0 40px #2196f3,
-    0 0 80px #2196f3;
-    transition-delay: 0.1s;
+    font-weight: bold;  
 }
 
 @media (max-width: 600px) {
@@ -69,7 +63,7 @@ a {
         right: 0px;
         height: 0px;
         transition: 0.6s;
-        background: rgba(0, 0, 0, 0.171);
+        background: rgba(0, 0, 0, 0.87);
         z-index: 1000;
         visibility: hidden;
         overflow-y: hidden;
