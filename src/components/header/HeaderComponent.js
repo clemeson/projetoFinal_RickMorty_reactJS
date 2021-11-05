@@ -57,7 +57,7 @@ const Hr = styled.hr`
     animation-duration: 1.2s;
     animation-timing-function: ease;
     border: 2px solid #39FF14;
-    box-shadow: 0px 0px 35px #74E452, 0px 0px 15px #74E452 inset;
+    box-shadow: 0px 0px 35px #74E452, 0px 0px 15px  inset;
 
     
     
