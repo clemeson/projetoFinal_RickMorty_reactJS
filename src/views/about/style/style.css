@@ -5,10 +5,14 @@ body{
     background-color: #01000D;
 }
 
+#pai{
+    padding-top:140px;
+    width: 70%;
+    margin:0 auto;
+}
 #pai2{
     display: flex;
     justify-content:space-around;
-    margin-top: 50px;
 }
 #text1{
     width: 450px;

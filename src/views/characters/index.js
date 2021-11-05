@@ -24,7 +24,7 @@ import LoadingComponent from "../../components/Loading";
     async function getApi() {
 
     
-        let res = await api.get('/location/');
+        let res = await api.get('/character/');
         setLoading(false)
         
         let json = res.data.results
@@ -92,7 +92,11 @@ import LoadingComponent from "../../components/Loading";
 
         }
 
-        <EscolhaUmPersona></EscolhaUmPersona>
+        <EscolhaUmPersona>
+
+
+
+        </EscolhaUmPersona>
 
                 <CarouselComponent imagens={character}   qtItems={5}  getId={handleImageId} />
             <ModalComponent
