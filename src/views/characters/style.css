@@ -58,5 +58,6 @@ button.rec-dot{
   }
 
   .container-welcome{
-    height: 400px;
+    height: 200px;
+    padding: 10px;
   }

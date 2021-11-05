@@ -1,7 +1,8 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useState,useEffect } from 'react'
 import Carousel from 'react-elastic-carousel'
 
-/**Component carroussel recebe o array capturado na requisição a api pela props e retorn o carroussel importando do modulo elastic para a pagina que chamou */
+/**Component carroussel recebe o array capturado na requisição a API pela props e retorn o carroussel importando do modulo elastic para a pagina que chamou */
 
 
 function CarouselComponent(props){
@@ -16,24 +17,17 @@ function CarouselComponent(props){
         }
     },[handleId])
     
-    return(
-        
-      
+    return( 
         <>
-        <Carousel
-         itemsToShow={props.qtItems}
-         
-        
-        
-         >
+            <Carousel
+            itemsToShow={props.qtItems}     
+            >
             
-          {props.imagens.map((item, index)=>(   
-              <img key={index} src={item.image}  onClick={(e)=>setHandleId(index +1)}/>
-            
-        
+            {props.imagens.map((item, index)=>(   
+                <img key={index} src={item.image}  onClick={(e)=>setHandleId(index +1)}/>
+               
           ))}
         </Carousel>
-
         </>
     )
 }

@@ -10,8 +10,6 @@ import PageNotFound from './views/notfound/index'
 
 
             return(
-                   
-            
                          <Switch>
 
                               <Route path="/" exact component={Home} />
@@ -21,7 +19,6 @@ import PageNotFound from './views/notfound/index'
                               <Route path="*"  component={PageNotFound} />
                             
                         </Switch>
-
             )
 
 }
