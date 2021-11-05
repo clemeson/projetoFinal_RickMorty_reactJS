@@ -1,14 +1,10 @@
 header, ul {
     margin: 0px;
     padding: 0px;
-
 }
 #div-header{
     position: fixed;
-    left:50%;
-    transform: translateX(-50%);
-
-    width: 70%;
+    width: 100%;
 }
 .link a{
     text-decoration: none;
@@ -31,14 +27,15 @@ header, ul {
 #header{
 
     height: 80px;
-   /* padding: 1rem;*/
+    padding: 1rem;
     width: 100%;
     margin: -8px;
     margin:10px;
     display: flex;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
 
+    
 }
 #menu{
     display: flex;
