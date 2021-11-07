@@ -31,7 +31,7 @@ function Location(){
         <div className='container'>
 
         </div>
-            <CarouselComponent imagens={imagem} qtItems={7}>
+            <CarouselComponent imagens={imagem} qtItems={1}>
 
             </CarouselComponent>
         
