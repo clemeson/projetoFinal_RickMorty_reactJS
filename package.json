@@ -1,5 +1,8 @@
 {
   "name": "rick_morty",
+  "engines": {
+    "node": "v14.x"
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,7 +11,7 @@
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.24.0",
     "history": "^5.0.1",
-    "node":"^14.17.6",
+    "node": "^14.17.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-elastic-carousel": "^0.11.5",
