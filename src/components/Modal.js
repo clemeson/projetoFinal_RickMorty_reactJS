@@ -56,12 +56,19 @@ const ModalBackground = styled.div`
 
 const Button = styled.button`
 
+    
 
+
+`
+
+const DivStatus = styled.div`
+    display: flex;
 
 `
 
 function ModalComponent(props){
 
+    const [color, setColor] = useState('')
     function hidenModal(){
         props.setModal('')
     }
@@ -77,9 +84,10 @@ function ModalComponent(props){
                     <div className="container-content">
                     <img key={idx} src={i.image} />
                     <h1 key={idx}>{i.name}</h1>
-                    <h2 key={idx}>Especie - {i.species}</h2>
-                    <h2 key={idx}>Status - {i.status}</h2>
-                    <h2 key={idx}>Genero - {i.gender}</h2>
+                
+
+                     <div className="status"> </div>
+                    <h2 key={idx}>{i.gender}</h2>
                    </div>
                 ))}
                 <Button>

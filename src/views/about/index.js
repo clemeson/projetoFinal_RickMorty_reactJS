@@ -4,6 +4,7 @@ import "./style/style.css"
 import "./style/responsividade.css"
 import "./style/carousel.css"
 import api from '../../services/api'
+import LoadingComponent from '../../components/Loading';
 
 
   
@@ -12,21 +13,34 @@ import api from '../../services/api'
 function Sobre(){
 
     const [imagem, setImagem] = useState([])
+    const [loading, setLoading] = useState(false)
      
        async function getImg(){
        let response = await api.get('/character/')
+       setLoading(false)
        let json = response.data.results
        setImagem(json)
     
     }
 
     useEffect(()=>{
-        getImg()
+        setLoading(true)
+        setTimeout(()=>{
+            getImg()
+        },1000)
     },[])
 
 
     return(
+
+
        <>
+            {loading &&
+        
+        <LoadingComponent><h1 className="loading">Loading...</h1></LoadingComponent>
+
+
+             }
        <main id="pai">
             <section id="pai2">
                 <div id="text1">
@@ -34,6 +48,7 @@ function Sobre(){
                 </div>
                     <figure> <img src="https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q80/wp-content/uploads/2020/05/legiao_Tx9kXPJq4Gw8.png.jpeg" alt=""></img> </figure>
             </section>
+
 
             <section id="pai3">
                     <figure> <img id="imagem2" src="https://i1.wp.com/cloud.estacaonerd.com/wp-content/uploads/2019/07/17091456/rick-and-morty-4-temp1.jpg?fit=3000%2C1688&ssl=1"></img> </figure>
