@@ -1,6 +1,8 @@
 import React,{useState} from "react";
 import { useEffect } from "react/cjs/react.development";
 import styled from 'styled-components'
+import { Link } from "react-router-dom";
+import { FaMapMarkerAlt, FaPortrait, FaRegClipboard } from "react-icons/fa";
 
 
 const ModalBackground = styled.div`
@@ -35,7 +37,6 @@ const ModalBackground = styled.div`
     .container-content{
     display:flex;
     flex-direction:column;
-    align-items:center;
 
     img{
         border-radius:50%;
@@ -48,20 +49,59 @@ const ModalBackground = styled.div`
     h2{
         margin:0 0 20px 0;
     }
+    h3{
+        margin:0 0 20px 0;
+    }
 
     }    
 
 
+
 `
 
-const Button = styled.button`
+const ModalContentChild = styled.div`
 
 
+    width: 300px;
+    margin: 0 auto;
+
+
+    img{
+        margin: 0 auto;
+    }
+
+
+    .status{
+        border-radius: 5px;
+        text-align: center;
+        padding: .2rem;
+
+    }
+
+    .containers-profile{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-left: 20px;
+    }
+
+`
+
+const divButton = styled.div`
+
+    
+
+
+`
+
+const DivStatus = styled.div`
+    display: flex;
 
 `
 
 function ModalComponent(props){
 
+    const [color, setColor] = useState('')
     function hidenModal(){
         props.setModal('')
     }
@@ -72,19 +112,40 @@ function ModalComponent(props){
         {props.visible >=1 &&
         <ModalBackground onClick={hidenModal}>
             <ModalContent>
-               
+               <ModalContentChild>
                 {props.Persona.map((i,idx)=>(
                     <div className="container-content">
                     <img key={idx} src={i.image} />
-                    <h1 key={idx}>{i.name}</h1>
-                    <h2 key={idx}>Especie - {i.species}</h2>
-                    <h2 key={idx}>Status - {i.status}</h2>
-                    <h2 key={idx}>Genero - {i.gender}</h2>
+
+                    <div className="containers-profile">
+                        <h1 key={idx}>  <FaPortrait/>{i.name}</h1>
+                    </div>
+                  
+                
+
+                    <div className="containers-profile">
+                
+                    <h2 key={idx}> <FaRegClipboard/>{i.species} </h2>
+                    <h2 className="status" key={idx} style={i.status.length == 5 ? {backgroundColor:'Green'} : {backgroundColor: 'Red'}}>        {i.status}</h2>
+                    </div>
+                    <div className="containers-profile">
+                         
+                    <h3> <FaMapMarkerAlt/>{i.location.name}</h3>
+
+                    </div>
+               
+              
+              
+                    <divButton>
+                   <li>
+                       <Link to="/character/location">
+                           Localização
+                       </Link>
+                   </li>
+               </divButton>
                    </div>
                 ))}
-                <Button>
-                    Localização
-                </Button>
+             </ModalContentChild>
             </ModalContent>
         </ModalBackground>
    

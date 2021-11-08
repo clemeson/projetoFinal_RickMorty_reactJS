@@ -1,9 +1,11 @@
 import React,{useState, useEffect} from 'react'
-import CarouselComponent from '../../components/Carousel';
+import { Link } from "react-router-dom";
 import "./style/style.css"
 import "./style/responsividade.css"
 import "./style/carousel.css"
 import api from '../../services/api'
+import LoadingComponent from '../../components/Loading';
+import GalleryComponent from './Gallery';
 
 
   
@@ -12,21 +14,34 @@ import api from '../../services/api'
 function Sobre(){
 
     const [imagem, setImagem] = useState([])
+    const [loading, setLoading] = useState(false)
      
        async function getImg(){
        let response = await api.get('/character/')
+       setLoading(false)
        let json = response.data.results
        setImagem(json)
     
     }
 
     useEffect(()=>{
-        getImg()
+        setLoading(true)
+        setTimeout(()=>{
+            getImg()
+        },1000)
     },[])
 
 
     return(
+
+
        <>
+            {loading &&
+        
+        <LoadingComponent><h1 className="loading">Loading...</h1></LoadingComponent>
+
+
+             }
        <main id="pai">
             <section id="pai2">
                 <div id="text1">
@@ -43,9 +58,11 @@ function Sobre(){
                     </p>
                 </div>
             </section>
-            <div id="carousel">
-                <CarouselComponent imagens={imagem} qtItems={5} />
-            </div>
+            <li>
+            <Link to="/about/gallery">Ir para a Galeria</Link>
+            </li>
+
+         
         </main>
        </>
     )

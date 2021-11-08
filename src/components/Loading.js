@@ -13,11 +13,15 @@ const rodando = keyframes`
 
 `
 
-export const Container = styled.div`
 
+
+export const Container = styled.div`
+    display:flex;
+    flex: column;
+    align-items: center;
     height:100vh;
     width: 100vw;
-    display: flex;
+    
 
     align-items: center;
     justify-content: center;
@@ -29,13 +33,15 @@ export const Container = styled.div`
 
 const Loading = styled.div`
 
-height: 70px;
-width: 70px;
+
+height: 80px;
+width: 80px;
 
 border-radius: 50%;
-border:8px solid white;
+border:8px solid white ;
 
-border-left: 8px solid #74E452;
+border-left: 8px solid #39FF14;
+box-shadow: 0px 0px 35px #39FF14, 0px 0px 15px #D705F2 inset;
 
 animation-name: ${rodando};
 animation-duration: .4s;
@@ -45,13 +51,19 @@ animation-iteration-count: infinite;
 
 `
 
+
+
+
+
  function LoadingComponent(){
 
 
     return(
         
         <Container>
-            <Loading></Loading>
+            <Loading>
+           
+            </Loading>
         </Container>
 
         )
