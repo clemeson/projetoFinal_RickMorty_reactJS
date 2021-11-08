@@ -1,10 +1,11 @@
 import React,{useState, useEffect} from 'react'
-import CarouselComponent from '../../components/Carousel';
+import { Link } from "react-router-dom";
 import "./style/style.css"
 import "./style/responsividade.css"
 import "./style/carousel.css"
 import api from '../../services/api'
 import LoadingComponent from '../../components/Loading';
+import GalleryComponent from './Gallery';
 
 
   
@@ -49,7 +50,6 @@ function Sobre(){
                     <figure> <img src="https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q80/wp-content/uploads/2020/05/legiao_Tx9kXPJq4Gw8.png.jpeg" alt=""></img> </figure>
             </section>
 
-
             <section id="pai3">
                     <figure> <img id="imagem2" src="https://i1.wp.com/cloud.estacaonerd.com/wp-content/uploads/2019/07/17091456/rick-and-morty-4-temp1.jpg?fit=3000%2C1688&ssl=1"></img> </figure>
                 <div id="text2">
@@ -58,9 +58,11 @@ function Sobre(){
                     </p>
                 </div>
             </section>
-            <div id="carousel">
-                <CarouselComponent imagens={imagem} qtItems={5} />
-            </div>
+            <li>
+            <Link to="/about/gallery">Ir para a Galeria</Link>
+            </li>
+
+         
         </main>
        </>
     )

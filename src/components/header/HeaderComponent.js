@@ -100,11 +100,9 @@ export default function Header() {
                         <li>
                         <Link className="link" to="/character"><Btn text='Personagens'/></Link>
                         </li>
+                    
                         <li>
-                        <Link className="link" to="/location"><Btn text='Localização'/></Link>
-                        </li>
-                        <li>
-                        <Link className="link" to="/about"><Btn text='Sobre'/></Link>
+                        <Link className="link" to="/about"><Btn text='Sobre a Série'/></Link>
                         </li>
                     </ul>  
                 </nav>

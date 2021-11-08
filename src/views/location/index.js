@@ -1,7 +1,7 @@
 import React,{useState, useEffect} from 'react'
 import api from '../../services/api'
 import './style.css'
-import CarouselComponent from '../../components/Carousel'
+
 
 
 
@@ -10,15 +10,19 @@ import CarouselComponent from '../../components/Carousel'
 
 function Location(){
 
-    const [imagem, setImagem] = useState([])
+    const [residents, setResidents] = useState('')
+    const [nome, setNome] = useState( localStorage.getItem('nome'))
      
        async function getImg(){
-       let response = await api.get('/character/')
+       let response = await api.get('/location/')
        let json = response.data.results
-       setImagem(json)
+
+        setResidents(json)
     
     }
 
+    console.log(nome)
+    
     useEffect(()=>{
         getImg()
     },[])
@@ -29,11 +33,10 @@ function Location(){
 
         <>
         <div className='container'>
-
+            
         </div>
-            <CarouselComponent imagens={imagem} qtItems={1}>
-
-            </CarouselComponent>
+        <input type="text" onChange={e=>setNome(e.target.value)} value={nome} ></input>
+          
         
         </>
     )
