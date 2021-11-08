@@ -3,7 +3,7 @@ import { useEffect } from "react/cjs/react.development";
 import styled from 'styled-components'
 import { Link } from "react-router-dom";
 import { FaMapMarkerAlt, FaPortrait, FaRegClipboard } from "react-icons/fa";
-
+import Btn from "./header/btn/Btn";
 
 const ModalBackground = styled.div`
 
@@ -87,10 +87,8 @@ const ModalContentChild = styled.div`
 
 `
 
-const divButton = styled.div`
-
-    
-
+const DivButton = styled.div`
+    margin: 0 auto;
 
 `
 
@@ -118,31 +116,31 @@ function ModalComponent(props){
                     <img key={idx} src={i.image} />
 
                     <div className="containers-profile">
-                        <h1 key={idx}>  <FaPortrait/>{i.name}</h1>
+                        <h1 key={idx}>  <FaPortrait/> - {i.name}</h1>
                     </div>
                   
                 
 
                     <div className="containers-profile">
                 
-                    <h2 key={idx}> <FaRegClipboard/>{i.species} </h2>
+                    <h2 key={idx}> <FaRegClipboard/> - {i.species} </h2>
                     <h2 className="status" key={idx} style={i.status.length == 5 ? {backgroundColor:'Green'} : {backgroundColor: 'Red'}}>        {i.status}</h2>
                     </div>
                     <div className="containers-profile">
                          
-                    <h3> <FaMapMarkerAlt/>{i.location.name}</h3>
+                    <h3> <FaMapMarkerAlt/> - {i.location.name}</h3>
 
                     </div>
                
               
               
-                    <divButton>
-                   <li>
-                       <Link to="/character/location">
-                           Localização
-                       </Link>
-                   </li>
-               </divButton>
+                    <DivButton>
+                        
+                        <Link to="/character/location">
+                           <Btn text='Localização'></Btn> 
+                        </Link>
+                        
+                    </DivButton>
                    </div>
                 ))}
              </ModalContentChild>
