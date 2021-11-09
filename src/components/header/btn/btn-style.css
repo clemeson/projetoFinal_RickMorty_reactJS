@@ -1,7 +1,7 @@
-a{
+#a{
     position: relative;
     display: inline-block;
-    padding: 10px 10px;
+    padding: 15px 10px;
     color: #39FF14;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -10,7 +10,7 @@ a{
     overflow: hidden;
     transition: 0.2s;
 }
- a:hover{
+ #a:hover{
     color: #AB05F2;
     background: #39FF14;
     box-shadow:
@@ -19,13 +19,13 @@ a{
     0 0 80px #39FF14;
     transition-delay: .8s;
 }
-a span{
+#a span{
     position: absolute;
     display: block;
 
 }
 /* parte de cima da animação */
-a span:nth-child(1)
+#a span:nth-child(1)
 {
     top: 0;
     left: -100%;
@@ -33,12 +33,12 @@ a span:nth-child(1)
     height: 2px;
     background: linear-gradient(90deg, transparent, #39FF14);
 }
-a:hover span:nth-child(1){
+#a:hover span:nth-child(1){
     left: 100%;
     transition: .8s;
 }
 /* parte de baixo da animação */
-a span:nth-child(3)
+#a span:nth-child(3)
 {
     bottom: 0;
     right: -100%;
@@ -46,13 +46,13 @@ a span:nth-child(3)
     height: 2px;
     background: linear-gradient(270deg, transparent, #39FF14);
 }
-a:hover span:nth-child(3){
+#a:hover span:nth-child(3){
     right: 100%;
     transition: .8s;
     transition-delay: 0.5s;
 }
 /* parte da direita da animação */
-a span:nth-child(2)
+#a span:nth-child(2)
 {
     top: -100%;
     right: 0;
@@ -60,13 +60,13 @@ a span:nth-child(2)
     height: 100%;
     background: linear-gradient(180deg, transparent, #39FF14);
 }
-a:hover span:nth-child(2){
+#a:hover span:nth-child(2){
     top: 100%;
     transition: .8s;
     transition-delay: 0.25s;
 }
 /* parte da esquerda da animação */
-a span:nth-child(4)
+#a span:nth-child(4)
 {
     bottom: -100%;
     left: 0;
@@ -74,7 +74,7 @@ a span:nth-child(4)
     height: 100%;
     background: linear-gradient(360deg, transparent, #39FF14);
 }
-a:hover span:nth-child(4){
+#a:hover span:nth-child(4){
     bottom: 100%;
     transition: .8s;
     transition-delay: 0.75s;
