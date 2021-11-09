@@ -1,9 +1,9 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { useEffect } from "react/cjs/react.development";
 import styled from 'styled-components'
 import { Link } from "react-router-dom";
-import { FaMapMarkerAlt, FaPortrait, FaRegClipboard } from "react-icons/fa";
-import Btn from "./header/btn/Btn";
+
+
 
 const ModalBackground = styled.div`
 
@@ -22,7 +22,7 @@ const ModalBackground = styled.div`
 
 `
 
-  const ModalContent = styled.div`
+const ModalContent = styled.div`
 
     height:550px;
     width:450px;
@@ -83,6 +83,8 @@ const ModalContentChild = styled.div`
         align-items: center;
         gap: 1rem;
         margin-left: 20px;
+        
+
     }
 
 `
@@ -97,57 +99,57 @@ const DivStatus = styled.div`
 
 `
 
-function ModalComponent(props){
+function ModalComponent(props) {
 
     const [color, setColor] = useState('')
-    function hidenModal(){
+    function hidenModal() {
         props.setModal('')
     }
 
 
-    return(
+    return (
         <>
-        {props.visible >=1 &&
-        <ModalBackground onClick={hidenModal}>
-            <ModalContent>
-               <ModalContentChild>
-                {props.Persona.map((i,idx)=>(
-                    <div className="container-content">
-                    <img key={idx} src={i.image} />
+            {props.visible >= 1 &&
+                <ModalBackground onClick={hidenModal}>
+                    <ModalContent>
+                        <ModalContentChild>
+                            {props.Persona.map((i, idx) => (
+                                <div className="container-content">
+                                    <img key={idx} src={i.image} />
 
-                    <div className="containers-profile">
-                        <h1 key={idx}>  <FaPortrait/> - {i.name}</h1>
-                    </div>
-                  
-                
+                                    <div className="containers-profile">
+                                        <h1 key={idx}> {i.name}   </h1>
+                                    </div>
 
-                    <div className="containers-profile">
-                
-                    <h2 key={idx}> <FaRegClipboard/> - {i.species} </h2>
-                    <h2 className="status" key={idx} style={i.status.length == 5 ? {backgroundColor:'Green'} : {backgroundColor: 'Red'}}>        {i.status}</h2>
-                    </div>
-                    <div className="containers-profile">
-                         
-                    <h3> <FaMapMarkerAlt/> - {i.location.name}</h3>
 
-                    </div>
-               
-              
-              
-                    <DivButton>
-                        
-                        <Link to="/character/location">
-                           <Btn text='Localização'></Btn> 
-                        </Link>
-                        
-                    </DivButton>
-                   </div>
-                ))}
-             </ModalContentChild>
-            </ModalContent>
-        </ModalBackground>
-   
-        }
+
+                                    <div className="containers-profile">
+
+                                        <h2 key={idx}></h2>
+                                        <h2 className="status" key={idx} style={i.status.length == 5 ? { backgroundColor: 'Green' } : { backgroundColor: 'Red' }}>        {i.status}</h2>
+                                    </div>
+                                    <div className="containers-profile">
+
+                                        <h3>{i.location.name}</h3>
+
+                                    </div>
+
+
+
+                                    <divButton>
+                                        <li>
+                                            <Link to="/character/location">
+                                                Localização
+                                            </Link>
+                                        </li>
+                                    </divButton>
+                                </div>
+                            ))}
+                        </ModalContentChild>
+                    </ModalContent>
+                </ModalBackground>
+
+            }
         </>
     )
 

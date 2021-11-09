@@ -1,3 +1,6 @@
+.rec.rec-arrow:disabled {
+    visibility: hidden;
+}
 header, ul {
     margin: 0px;
     padding: 0px;

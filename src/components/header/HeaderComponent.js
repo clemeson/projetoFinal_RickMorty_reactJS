@@ -99,8 +99,11 @@ export default function Header() {
                         </li>
                         <li>
                         <Link className="link" to="/character"><Btn text='Personagens'/></Link>
+
                         </li>
-                    
+                             <li>
+                        <Link className="link" to="/location"><Btn text='Planetas'/></Link>
+                        </li>
                         <li>
                         <Link className="link" to="/about"><Btn text='Sobre a Série'/></Link>
                         </li>

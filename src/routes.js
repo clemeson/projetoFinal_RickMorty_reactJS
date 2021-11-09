@@ -18,7 +18,7 @@ import PageNotFound from './views/notfound/index'
 
 
                               <Route path="/character"  exact component={Personagens} />
-                              <Route path="/character/location" exact component={Location} />
+                              <Route path="/location" exact component={Location} />
 
                               <Route path="/about" exact component={Sobre} />
                               <Route path="/about/gallery" exact component={GalleryComponent} />
