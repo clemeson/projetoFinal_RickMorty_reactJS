@@ -110,7 +110,7 @@ function CarouselComponent(props){
                 }   
 
                {item.image &&
-              <img key={index} src={item.image}  onClick={(e)=>setHandleId(index +1)}/>
+              <img  className='imgCarousel' key={index} src={item.image}  onClick={(e)=>setHandleId(index +1)}/>
                }
             </div>
           ))}

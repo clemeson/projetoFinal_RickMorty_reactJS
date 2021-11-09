@@ -26,7 +26,6 @@ const ModalContent = styled.div`
 
     height:550px;
     width:450px;
-    padding:30px 0 0 0;
   
     border-radius: 3px 3px 5px;
     background-color: #1B0126;
@@ -62,12 +61,14 @@ const ModalContent = styled.div`
 const ModalContentChild = styled.div`
 
 
-    width: 300px;
-    margin: 0 auto;
+        width: 300px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
 
 
     img{
-        margin: 0 auto;
+       
     }
 
 
@@ -82,17 +83,14 @@ const ModalContentChild = styled.div`
         display: flex;
         align-items: center;
         gap: 1rem;
-        margin-left: 20px;
+       
         
 
     }
 
 `
 
-const DivButton = styled.div`
-    margin: 0 auto;
 
-`
 
 const DivStatus = styled.div`
     display: flex;
@@ -126,23 +124,24 @@ function ModalComponent(props) {
                                     <div className="containers-profile">
 
                                         <h2 key={idx}></h2>
-                                        <h2 className="status" key={idx} style={i.status.length == 5 ? { backgroundColor: 'Green' } : { backgroundColor: 'Red' }}>        {i.status}</h2>
+                                        <h2 className="status" key={idx} style={i.status.length == 5 ? { backgroundColor: 'Green' } : { backgroundColor: 'Red' }}>  {i.status}</h2>
                                     </div>
                                     <div className="containers-profile">
+
+                                    <h3>{i.species}</h3>
+                                        
+                                        </div>
+
+                                        <div className="containers-profile">
 
                                         <h3>{i.location.name}</h3>
 
                                     </div>
+                                
 
 
 
-                                    <divButton>
-                                        <li>
-                                            <Link to="/character/location">
-                                                Localização
-                                            </Link>
-                                        </li>
-                                    </divButton>
+                              
                                 </div>
                             ))}
                         </ModalContentChild>
