@@ -53,7 +53,8 @@ function Location() {
 
 
     useEffect(()=>{
-        {vw <= 400? setQtCard(1): setQtCard(3)}
+        console.log(vw)
+        {vw <= 670 ? setQtCard(1): setQtCard(3)}
     },[window])
 
     
@@ -76,11 +77,12 @@ function Location() {
              
                     <CarouselComponent
                      imagens={jsontype}
-                    qtItems={qtCard}
+                     qtItems={qtCard}
 
-                     showFlechas={false}
+            
                      text={true}
-                     pagination={true}
+                     
+                     viewWidth={qtCard}
             
                      >
                 

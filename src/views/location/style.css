@@ -46,3 +46,7 @@ p{
 .typeselect option{
     display: inline-flex;
 }
+
+.rec{
+    margin-bottom: 20px;
+}

@@ -28,10 +28,10 @@ const ModalContent = styled.div`
     width:450px;
     padding:30px 0 0 0;
   
-    border-radius:5px;
+    border-radius: 3px 3px 5px;
     background-color: #1B0126;
     box-shadow: 0px 0px 35px #74E452, 0px 0px 15px #74E452 inset;
-    border: 10px solid #74E452;
+    border: 10px solid #39FF14;
     
 
     .container-content{
@@ -40,7 +40,7 @@ const ModalContent = styled.div`
 
     img{
         border-radius:50%;
-        width: 180px
+        width: 200px;
     }
     h1{
         margin: 20px 0 10px 0;
@@ -89,10 +89,8 @@ const ModalContentChild = styled.div`
 
 `
 
-const divButton = styled.div`
-
-    
-
+const DivButton = styled.div`
+    margin: 0 auto;
 
 `
 

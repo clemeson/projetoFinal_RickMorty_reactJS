@@ -21,10 +21,8 @@ import LoadingComponent from "../../components/Loading";
     const [persona, setPersona] = useState([])
 
 
-
     async function getApi() {
 
-    
         let res = await api.get('/character/');
         setLoading(false)
         
@@ -42,24 +40,13 @@ import LoadingComponent from "../../components/Loading";
        
     }, [])
 
-
-
-
     function handleImageId(imgID) {
         setId(imgID)
-
-
-
     }
-    
-
 
     useEffect(() => {
         setShowModal(id)
     }, [id])
-
-
-
 
     function get(per){
         per.map((i,idx)=>{
@@ -78,43 +65,26 @@ import LoadingComponent from "../../components/Loading";
             <div className="container-welcome">
                 <h1>Escolha um personagem, clikando na foto</h1>
             </div>
-
-
         )
     }
 
     return (
         <>
-        
         {loading &&
         
             <LoadingComponent><h1 className="loading">Loading...</h1></LoadingComponent>
 
 
         }
-
-        <EscolhaUmPersona>
-
-
-
-        </EscolhaUmPersona>
+        <EscolhaUmPersona></EscolhaUmPersona>
 
                 <CarouselComponent imagens={character}   qtItems={5}  getId={handleImageId} />
             <ModalComponent
              visible={showModal}
              setModal={setShowModal}
              Persona={persona}
-             
-
-            
-            
-            >
-               
-            
+            >           
             </ModalComponent>
         </>
     )
-
-
-
 }

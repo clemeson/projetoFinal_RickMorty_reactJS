@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useState,useEffect } from 'react'
 import Carousel from 'react-elastic-carousel'
 import styled,{keyframes} from 'styled-components'
@@ -69,7 +70,7 @@ const HrPurple = styled.hr`
 
 `
 
-/**Component carroussel recebe o array capturado na requisição a api pela props e retorn o carroussel importando do modulo elastic para a pagina que chamou */
+/**Component carroussel recebe o array capturado na requisição a API pela props e retorn o carroussel importando do modulo elastic para a pagina que chamou */
 
 
 function CarouselComponent(props){
@@ -92,8 +93,8 @@ function CarouselComponent(props){
         <>
         <Carousel
          itemsToShow={props.qtItems}
-         showArrows={props.showFlechas}
-         pagination={props.pagination}
+         showArrows={props.viewWidth ==1? true : false}
+         pagination={props.viewWidth == 1? false : true}
   
          
         
@@ -115,7 +116,6 @@ function CarouselComponent(props){
           ))}
           
         </Carousel>
-
         </>
     )
 }
