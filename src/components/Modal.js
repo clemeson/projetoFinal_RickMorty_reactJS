@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import { useEffect } from "react/cjs/react.development";
-import styled from 'styled-components'
+import styled,{keyframes} from 'styled-components'
 import { Link } from "react-router-dom";
+import LoadBar from './LoadingBar';
+
+
+
+
 
 
 
@@ -23,45 +28,103 @@ const ModalBackground = styled.div`
 `
 
 const ModalContent = styled.div`
+    width: 400px;
+    
+  @media(max-width: 720px) {
+        width: 320px;
+        height: 480px;
+       .containers-profile h1,{
+            font-size: 20px;
+       }
+       .containers-profile h2{
+            font-size: 18px;
+       }
+       .containers-profile h3{
+            font-size: 16px;
+       }
 
-    height:550px;
-    width:450px;
+       
+
+     
+     
+  }
+
+  @media(max-width: 510px){
+    width: 290px;
+    height: 450px;
+    .containers-profile h3{
+            font-size: 14px;
+       }
+       .containers-profile h1{
+            font-size: 24px;
+       }
+
+  }
+
+  @media(max-width: 380px){
+      height: 400px;
+
+
+    .container-content{
+        width: 280px;
+    }
+  }
+
+    
   
     border-radius: 3px 3px 5px;
     background-color: #1B0126;
-    box-shadow: 0px 0px 35px #74E452, 0px 0px 15px #74E452 inset;
-    border: 10px solid #39FF14;
+    border: 8px solid #39FF14;
+    box-shadow: 0px 0px 35px #39FF14, 0px 0px 15px #D705F2 inset;
     
 
     .container-content{
+        margin: 0 auto;
+        width: 300px;
+    height: 500px;
     display:flex;
     flex-direction:column;
+    align-items: center;
+    padding: 40px 0 0 0;
+    @media(max-width: 510px){
+        width: 280px;
+    }
 
     img{
+        margin-bottom: 10px;
         border-radius:50%;
         width: 200px;
-    }
-    h1{
-        margin: 20px 0 10px 0;
-    }
+        border: 3px solid #D705F2;
+        box-shadow: 0px 0px 35px #D705F2, 0px 0px 15px #D705F2 inset;
+        
+     
 
-    h2{
-        margin:0 0 20px 0;
+            @media(max-width: 720px){
+            width:170px;
     }
-    h3{
-        margin:0 0 20px 0;
+            @media(max-width: 510px){
+                width:150px;
+            }
+
+            
+        @media(max-width: 380px){
+                width: 120px;
+                
+            }
     }
+      
+
+ 
 
     }    
-
+ 
 
 
 `
-
 const ModalContentChild = styled.div`
 
 
-        width: 300px;
+       
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -79,15 +142,22 @@ const ModalContentChild = styled.div`
 
     }
 
-    .containers-profile{
+    .containers-profile,h3{
         display: flex;
         align-items: center;
-        gap: 1rem;
-       
-        
+        font-size: 18px;
+        gap: 1rem;  
+    
 
     }
+    .containers-profile{
+    margin-bottom : 5px;
+    margin-top : 5px;
+    }
 
+    
+    }
+   
 `
 
 
@@ -113,7 +183,7 @@ function ModalComponent(props) {
                         <ModalContentChild>
                             {props.Persona.map((i, idx) => (
                                 <div className="container-content">
-                                    <img key={idx} src={i.image} />
+                                    <img className="img-profile" key={idx} src={i.image} />
 
                                     <div className="containers-profile">
                                         <h1 key={idx}> {i.name}   </h1>
@@ -123,21 +193,22 @@ function ModalComponent(props) {
 
                                     <div className="containers-profile">
 
-                                        <h2 key={idx}></h2>
+                                        <h2 key={idx}>Status</h2>
                                         <h2 className="status" key={idx} style={i.status.length == 5 ? { backgroundColor: 'Green' } : { backgroundColor: 'Red' }}>  {i.status}</h2>
                                     </div>
                                     <div className="containers-profile">
-
-                                    <h3>{i.species}</h3>
+                                    <h2>Espécie</h2>
+                                    <div>-</div>
+                                    <h2>{i.species}</h2>
                                         
                                         </div>
-
+                                    <LoadBar/>
                                         <div className="containers-profile">
 
-                                        <h3>{i.location.name}</h3>
+                                          <h3>{i.location.name}</h3>
 
-                                    </div>
-                                
+                                         </div>
+                                    <LoadBar/>
 
 
 

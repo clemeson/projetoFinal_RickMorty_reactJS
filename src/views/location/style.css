@@ -1,5 +1,21 @@
+.rec-carousel{
+  
+    display: flex;
+    justify-content: center;
+}
 
+.rec-carousel-item:hover{
+    transform: scale(1.1);
+}
 
+.rec{
+    transition: all 0.3s ease-out;
+}
+
+.imgCarousel{
+  width: 190px;
+  cursor: pointer;
+}
 .container{
     padding-top:140px ;
     display: flex;

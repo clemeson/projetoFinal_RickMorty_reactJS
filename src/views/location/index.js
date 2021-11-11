@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import api from '../../services/api'
 import CarouselComponent from '../../components/Carousel'
 import './style.css'
+import LoadingBar from '../../components/LoadingBar'
 
 
 

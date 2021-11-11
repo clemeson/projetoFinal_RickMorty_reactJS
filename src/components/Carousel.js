@@ -1,74 +1,12 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState,useEffect } from 'react'
 import Carousel from 'react-elastic-carousel'
-import styled,{keyframes} from 'styled-components'
-
-const keyLine = keyframes`
-0%{
-    border-width: 2px solid #74E452;
-    width: 1%;
-    transition: all 0.5s ease-out
-}
-
-50%{
-    border: 2px solid #74E452;
-    width: 50%;
-    box-shadow: 0px 0px 35px #74E452, 0px 0px 15px #74E452 inset;
-
-}
-100%{
-    border: 2px solid #74E452;
-    width: 90%;
-    box-shadow: 0px 0px 35px #74E452, 0px 0px 15px #74E452 inset;
-}
-
-`
+import styled from 'styled-components'
+import LoadingBar from './LoadingBar'
 
 
-const keyLine2 = keyframes`
-0%{
-    border-width: 2px solid #D705F2;
-    width: 1%;
-    transition: all 0.5s ease-out
-}
-
-50%{
-    border: 2px solid #D705F2;
-    width: 50%;
-    box-shadow: 0px 0px 35px #D705F2, 0px 0px 15px #D705F2 inset;
-
-}
-100%{
-    border: 2px solid #D705F2;
-    width: 90%;
-    box-shadow: 0px 0px 35px #D705F2, 0px 0px 15px #D705F2 inset;
-}
-c
-
-`
-const Hr = styled.hr`
-    
-    animation-name: ${keyLine};
-    animation-duration: 1.2s;
-    animation-timing-function: ease;
-    border: 2px solid #39FF14;
-    box-shadow: 0px 0px 35px #74E452, 0px 0px 15px  inset;
-
-    
-    
-
-`
 
 
-const HrPurple = styled.hr`
-
-    animation-name: ${keyLine2};
-    animation-duration: 1.2s;
-    border: 2px solid #D705F2;
-    box-shadow: 0px 0px 35px #D705F2, 0px 0px 15px #D705F2 inset;
-
-
-`
 
 /**Component carroussel recebe o array capturado na requisição a API pela props e retorn o carroussel importando do modulo elastic para a pagina que chamou */
 
@@ -79,20 +17,25 @@ function CarouselComponent(props){
     /*pega click da imagem, e retorn o id da imagem para o component pai*/
 
     const [handleId, setHandleId] = useState('')
-
+    const [vw, setVw] = useState(window.innerWidth)
+    const [card, setCard] = useState(5)
+    //pega click e envia id da foto clickada para o arquivo que enviou a funcao na props
     useEffect(()=>{
         if(props.getId){
             (props.getId(handleId))
         }
     },[handleId])
 
-  
+    
+
+    //tentando fazer condicionais de exibicao por tamanho da tela
+ 
     return(
         
       
         <>
         <Carousel
-         itemsToShow={props.qtItems}
+         itemsToShow={vw <= 400? 1 : 5}
          showArrows={props.viewWidth ==1? true : false}
          pagination={props.viewWidth == 1? false : true}
   
@@ -106,7 +49,7 @@ function CarouselComponent(props){
                 <div>
                     
                 {props.text &&    
-                <div className='card'>{item.name}<Hr/><HrPurple/><br/>{item.type}<Hr/><HrPurple/><br/>{item.dimension}<Hr/><HrPurple/></div>
+                <div className='card'>{item.name}<br/><LoadingBar/>{item.type}<br/><LoadingBar/>{item.dimension}<LoadingBar/></div>
                 }   
 
                {item.image &&
