@@ -27,7 +27,18 @@ function CarouselComponent(props){
     },[handleId])
 
     
-
+    useEffect(()=>{
+         if(vw <= 360){
+            setCard(1)
+        }
+        else if(vw <= 510){
+            setCard(2)
+        }else if(vw <= 720){
+            setCard(3)
+        
+        }
+    
+    },[window])
     //tentando fazer condicionais de exibicao por tamanho da tela
  
     return(
@@ -35,7 +46,7 @@ function CarouselComponent(props){
       
         <>
         <Carousel
-         itemsToShow={vw <= 400? 1 : 5}
+         itemsToShow={card}
          showArrows={props.viewWidth ==1? true : false}
          pagination={props.viewWidth == 1? false : true}
   
