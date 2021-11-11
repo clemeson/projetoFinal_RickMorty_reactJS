@@ -38,7 +38,7 @@ export default function Home() {
                 <div>
                     <h1 id='end-title'>Experimente também na versão Mobile!</h1>
                 </div>
-                <div>
+                <div id='cell-giffs'>
                     <img id='gifcell' src={gifcell}></img>
                     <img id='squanch' src={squanch}></img>
                 </div>

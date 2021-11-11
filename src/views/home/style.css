@@ -5,6 +5,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 10vh;
 }
 #sec-title{
   background-color: #0000003f;
@@ -25,15 +26,17 @@
   font-size: 4em;
   color: white;
   text-shadow: 9px 9px 9px #000000;
-  max-width: 600px;
+  max-width: 50vw;
 }
 #end-title{
+  color: white;
   text-shadow: 9px 9px 9px black;
   padding: 50px;
   max-width: 600px;
 }
 .sections{
-  background: #031321;
+  animation: gradient 10s ease alternate infinite;
+  background-image: radial-gradient(circle, #1b0126, #150221, #0e021c, #070116, #01000d);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,7 +51,8 @@
   background-color: blanchedalmond;
 }
 h1{
-  font-size: 2.5em;
+  font-size: 2.2em;
+  padding: 15px;
 }
 p{
   font-size: 1.4em;
@@ -63,19 +67,22 @@ p{
 .heads{
   max-width: 350px;
 }
-
 #gifcell{
   max-width: 200px;
   border-radius: 14px;
   border: solid 6px rgb(22, 22, 22);
   box-shadow: 4px 4px 15px black;
+  
 }
 #squanch{
   max-width: 300px;
+  margin-left: 200px;
 }
 
 @media (max-width: 800px) {
   #title{
+      font-size: 4em;
+      margin: auto;
       text-align: center;
   }
   #end-title{
@@ -85,7 +92,11 @@ p{
       display: flex;
       flex-direction: column;
       margin: auto;
-      height: 120vh;
+      height: 110vh;
+  }
+  h1{
+    font-size: 1.8em;
+    width: 100%;
   }
   #gifcell{
       width: 150px;
