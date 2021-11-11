@@ -135,6 +135,11 @@ const ModalContentChild = styled.div`
     }
 
 
+
+
+    
+
+
     .status{
         border-radius: 5px;
         text-align: center;
