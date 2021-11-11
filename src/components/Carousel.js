@@ -60,7 +60,7 @@ function CarouselComponent(props){
                 <div>
                     
                 {props.text &&    
-                <div className='card'>{item.name}<br/><LoadingBar/>{item.type}<br/><LoadingBar/>{item.dimension}<LoadingBar/></div>
+                <div className='card'>{item.name}<br/><LoadingBar time={.5}/>{item.type}<br/><LoadingBar/>{item.dimension}<LoadingBar/></div>
                 }   
 
                {item.image &&

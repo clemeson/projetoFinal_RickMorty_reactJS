@@ -1,4 +1,12 @@
 
+
+.containerCharacter{
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+
 .rec-slider-container{
     display: flex;
     border: 8px solid #39FF14;

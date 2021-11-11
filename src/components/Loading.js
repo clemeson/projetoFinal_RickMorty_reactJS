@@ -16,11 +16,13 @@ const rodando = keyframes`
 
 
 export const Container = styled.div`
+
     display:flex;
     flex: column;
     align-items: center;
+    
     height:100vh;
-    width: 100vw;
+    width: 70vw;
     
 
     align-items: center;
@@ -44,7 +46,7 @@ border-left: 8px solid #39FF14;
 box-shadow: 0px 0px 35px #39FF14, 0px 0px 15px #D705F2 inset;
 
 animation-name: ${rodando};
-animation-duration: .4s;
+animation-duration: .5s;
 animation-iteration-count: infinite;
 
 

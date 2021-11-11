@@ -1,12 +1,14 @@
 #a{
     position: relative;
+    font-size: 15px;
+    font-weight: bold;
     display: inline-block;
     padding: 15px 10px;
     color: #39FF14;
     text-transform: uppercase;
     letter-spacing: 4px;
     text-decoration: none;
-    font-size: 16px;
+    
     overflow: hidden;
     transition: 0.2s;
 }
@@ -79,3 +81,4 @@
     transition: .8s;
     transition-delay: 0.75s;
 }
+
