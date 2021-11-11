@@ -54,8 +54,15 @@ h1{
   font-size: 2.2em;
   padding: 15px;
 }
-p{
+h2{
+  padding: 20px;
+}
+#p{
   font-size: 1.4em;
+}
+#sms-link{
+  font-size: 14px;
+  padding: 20px;
 }
 #portal{
   width: 500px;
@@ -77,6 +84,25 @@ p{
 #squanch{
   max-width: 300px;
   margin-left: 200px;
+}
+
+#link{
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.5em;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  background: #0000003e;
+}
+#link:hover{
+  color: #AB05F2;
+    background: #39FF14;
+    box-shadow:
+    0 0 10px #39FF14, 
+    0 0 40px #39FF14,
+    0 0 80px #39FF14;
+    transition: 1s;
 }
 
 @media (max-width: 800px) {
@@ -120,5 +146,8 @@ p{
   #box-heads{
       display: none;
   }
-
+  #link{
+    margin: auto;
+    white-space: nowrap;
+  }
 }
