@@ -2,6 +2,7 @@
 
 import React from "react"
 import './style.css'
+import { Link } from "react-router-dom"
 
 import portal from './img/portal.gif'
 import rickhead from './img/rick.gif'
@@ -19,7 +20,7 @@ export default function Home() {
             <section className='sections'>
                 <div id='text1'>
                     <h1>Pronto para aventurar-se no multiverso Rick and Morty?</h1>
-                    <p>Navegue num mar de curiosidades da nossa comunidade de fãs da melhor série animada do mundo!</p> 
+                    <p id='p'>Navegue num mar de curiosidades da nossa comunidade de fãs da melhor série animada do mundo!</p> 
                 </div>
                 <div id='portal-div'>
                     <img id='portal' src={portal}></img>
@@ -32,6 +33,8 @@ export default function Home() {
                 </div>
                 <div id='text2'>
                     <h2>Vamos viajar num mundo diferente, perscrutar dimensões e galáxias, conhecer personagens e por onde andam a nossa dupla de viajantes intergalácticos preferida.</h2>
+                    <Link id="link" to="/character"> Vamos Começar?</Link>
+                    <p id='sms-link'>Cique aqui para ser redirecionado à página de personagens.</p>
                 </div>
             </section>
             <section id='sec-title2'>
