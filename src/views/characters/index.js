@@ -75,7 +75,7 @@ import LoadingComponent from "../../components/Loading";
         
         {loading &&
         
-            <LoadingComponent><h1 className="loading">Loading...</h1></LoadingComponent>
+            <LoadingComponent></LoadingComponent>
 
 
         }

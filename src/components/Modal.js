@@ -207,13 +207,13 @@ function ModalComponent(props) {
                                     <h2>{i.species}</h2>
                                         
                                         </div>
-                                    <LoadBar time={.5}/>
+                                    <LoadBar time={.3}/>
                                         <div className="containers-profile">
 
                                           <h3>{i.location.name}</h3>
 
                                          </div>
-                                    <LoadBar time={.5}/>
+                                    <LoadBar time={.3}/>
 
 
 

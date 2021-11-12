@@ -13,7 +13,9 @@ import squanch from './img/squanch.gif'
 export default function Home() {
 
     return(
+       
         <div id='body'>
+            <div id="containerHome">
             <section id='sec-title'>
                 <h1 id='title'>Rick & Morty Club</h1>
             </section>
@@ -46,6 +48,7 @@ export default function Home() {
                     <img id='squanch' src={squanch}></img>
                 </div>
             </section>
+        </div>
         </div>
     )
 }

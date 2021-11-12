@@ -3,7 +3,13 @@
     display: flex;
     justify-content: center;
 }
-
+.rec-slider-container{
+    
+    
+    text-align: center;
+    
+    
+}
 .rec-carousel-item:hover{
     transform: scale(1.1);
 }
@@ -66,4 +72,8 @@ p{
 
 .rec{
     margin-bottom: 20px;
+}
+
+.card{
+    padding-top: 25px;
 }
