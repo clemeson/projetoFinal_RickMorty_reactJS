@@ -36,14 +36,14 @@ function Sobre(){
     return(
 
 
-       <>
+       <><main id="pai">
             {loading &&
         
-        <LoadingComponent><h1 className="loading">Loading...</h1></LoadingComponent>
+        <LoadingComponent></LoadingComponent>
 
 
              }
-       <main id="pai">
+       
             <section id="pai2">
                 <div id="text1">
                     <p>Rick and Morty (em português Rick e Morty) é uma série de animação adulta norte-americana de comédia e ficção científica criada por <a id='links' href="https://pt.wikipedia.org/wiki/Justin_Roiland" target="_blank">Justin Roiland</a> e <a id='links' href="https://pt.wikipedia.org/wiki/Adult_Swim" target="_blank">Dan Harmon</a> para o bloco de programação noturno Adult Swim, exibido no canal Cartoon Network.</p>

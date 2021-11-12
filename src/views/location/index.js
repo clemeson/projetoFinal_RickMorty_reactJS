@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-
 import api from '../../services/api'
 import CarouselComponent from '../../components/Carousel'
 import './style.css'
+import LoadingComponent from '../../components/Loading'
+import LoadingBar from '../../components/LoadingBar'
 
 
 
@@ -14,6 +14,7 @@ function Location() {
 
     const [array, setArray] = useState([])
     const [url, setUrl] = useState('')
+    const [loading, setLoading] = useState(false)
     const [type, setType] = useState('')
     const [jsontype, setJsontype] = useState([])
     const [vw, setVw] = useState(window.innerWidth)
@@ -29,7 +30,9 @@ function Location() {
  
 
     useEffect(() => {
+     
         getLocation()
+        setLoading(true)
     }, [])
   
 
@@ -38,6 +41,7 @@ function Location() {
     async function getType(type) {
 
         let response = await api.get(`/location/?type=${type}`)
+        setLoading(false)
         let jsonType = response.data.results
         setJsontype(jsonType)
 
@@ -62,6 +66,10 @@ function Location() {
         
 
         <div className="container">
+                 
+        {loading &&
+        <LoadingComponent />
+        }
             <div class="container-dimensoes">
 
                 <form className="form">

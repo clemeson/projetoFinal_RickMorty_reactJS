@@ -1,10 +1,33 @@
+.rec-carousel{
+  
+    display: flex;
+    justify-content: center;
+}
+.rec-slider-container{
+    
+    
+    text-align: center;
+    
+    
+}
+.rec-carousel-item:hover{
+    transform: scale(1.1);
+}
 
+.rec{
+    transition: all 0.3s ease-out;
+}
 
+.imgCarousel{
+  width: 190px;
+  cursor: pointer;
+}
 .container{
     padding-top:140px ;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
     height: 100%;
 }
 
@@ -49,4 +72,8 @@ p{
 
 .rec{
     margin-bottom: 20px;
+}
+
+.card{
+    padding-top: 25px;
 }

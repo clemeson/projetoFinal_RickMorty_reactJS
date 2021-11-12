@@ -1,83 +1,159 @@
-
-
-
-.pai{
-  padding-top:140px;
-  width:100%;
+#containerHome{
+  width: 70%;
+  margin: 0 auto;
 }
 
 
-.img{
-  margin-left: 70%;
-  border-radius: 70%;
+#body{
+  background-image: url(./img/712660.jpg);
+  background-attachment: fixed;
+  min-height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10vh;
+}
+#sec-title{
+  background-color: #0000003f;
+  border-bottom: solid 3px #ffffffad;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+#sec-title2{
+  background-color: #0000007a;
+  border-bottom: solid 3px #ffffffad;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+#title{
+  padding: 50px;
+  font-size: 4em;
+  color: white;
+  text-shadow: 9px 9px 9px #000000;
+  max-width: 50vw;
+}
+#end-title{
+  color: white;
+  text-shadow: 9px 9px 9px black;
+  padding: 50px;
+  max-width: 600px;
+}
+.sections{
+  animation: gradient 10s ease alternate infinite;
+  background-image: radial-gradient(circle, #1b0126, #150221, #0e021c, #070116, #01000d);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 3px #ffffffad;
+  height: 90vh;
+}
+#text1, #text2{
+  padding: 50px;
+  max-width: 600px;
+}
+.box{
+  background-color: blanchedalmond;
+}
+#h1{
+  font-size: 2.2em;
+  padding: 15px;
+}
+#h2{
+  padding: 20px;
+}
+#p{
+  font-size: 1.4em;
+}
+#sms-link{
+  font-size: 14px;
+  padding: 20px;
+}
+#portal{
+  width: 500px;
+}
+#box-heads{
+  display: flex;
+  justify-content: space-between;
+}
+.heads{
+  max-width: 350px;
+}
+#gifcell{
+  max-width: 200px;
+  border-radius: 14px;
+  border: solid 6px rgb(22, 22, 22);
+  box-shadow: 4px 4px 15px black;
+  
+}
+#squanch{
+  max-width: 300px;
+  margin-left: 200px;
+}
 
+#link{
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.5em;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  background: #0000003e;
 }
-.img2{
-  width: 50px;
-  height: 50px;
-  margin-top: -10%;
-}
-.img3{
-  margin-left: 30%;
-  margin-top: -70%;
+#link:hover{
+  color: #AB05F2;
+    background: #39FF14;
+    box-shadow:
+    0 0 10px #39FF14, 
+    0 0 40px #39FF14,
+    0 0 80px #39FF14;
+    transition: 1s;
 }
 
-.nome1,.slide-in-left {
-	animation: slide-in-left 5s cubic-bezier(0.860, 0.000, 0.070, 1.000) infinite alternate-reverse backwards;
-    color: rgb(115, 226, 11);
-    margin-left: 25%;
-    font-family:monospace;
-    font-size: 30px;
-    
-}
-
-@keyframes slide-in-left {
-  0% {
-    transform: translateX(-1000px);
-    opacity: 0;
+@media (max-width: 800px) {
+  #title{
+      font-size: 4em;
+      margin: auto;
+      text-align: center;
   }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
+  #end-title{
+      text-align: center;
+  }
+  #sec-title2{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      height: 110vh;
+  }
+  h1{
+    font-size: 1.8em;
+    width: 100%;
+  }
+  #gifcell{
+      width: 150px;
+      margin-left: 0px;
+  }
+  #squanch{
+      display: none;
+  }
+  
+  .sections{
+      display: flex;
+      flex-direction: column;
+      height: 135vh; 
+      text-align: center;  
+      width: 100%;     
+  }
+  #portal{
+      max-width: 300px;
+      padding: 20px;
+  }
+  #box-heads{
+      display: none;
+  }
+  #link{
+    margin: auto;
+    white-space: nowrap;
   }
 }
-.nome2,.slide-in-right {
-	animation: slide-in-right 3s cubic-bezier(1.000, 0.000, 0.000, 1.000) infinite alternate forwards;
-  color:rgb(115, 226, 11); 
-  font-family: monospace;
-  margin-left: 15%;
-  font-size: 30px;  
-
-}
-@keyframes slide-in-right {
-  0% {
-    transform: translateX(1000px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-.nome3,.slide-in-elliptic-top-bck {
-	animation: slide-in-elliptic-top-bck 5s cubic-bezier(0.165, 0.840, 0.440, 1.000) infinite both;
-  font-family:monospace;
-  color:rgb(115, 226, 11); 
-  margin-left: 15%;
-  font-size: 60px;
-}
-@keyframes slide-in-elliptic-top-bck {
-  0% {
-    transform: translateY(-600px) rotateX(30deg) scale(6.5);
-    transform-origin: 50% 200%;
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0) rotateX(0) scale(1);
-    transform-origin: 50% -500px;
-    opacity: 1;
-  }
-}
-
-

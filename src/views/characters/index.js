@@ -70,9 +70,12 @@ import LoadingComponent from "../../components/Loading";
 
     return (
         <>
+        <div className="containerCharacter">
+
+        
         {loading &&
         
-            <LoadingComponent><h1 className="loading">Loading...</h1></LoadingComponent>
+            <LoadingComponent></LoadingComponent>
 
 
         }
@@ -85,6 +88,7 @@ import LoadingComponent from "../../components/Loading";
              Persona={persona}
             >           
             </ModalComponent>
+            </div>
         </>
     )
 }

@@ -1,20 +1,26 @@
 
+
+.containerCharacter{
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+
 .rec-slider-container{
     display: flex;
-    padding: 12px 0;
     border: 8px solid #39FF14;
     box-shadow: 0px 0px 35px #39FF14, 0px 0px 15px #D705F2 inset;
-
     max-width: 70%;
-
     
 }
 
 
 .rec-carousel{
-  
+    width:399px;
     display: flex;
     justify-content: center;
+   
 }
 
 .rec-carousel-item:hover{
@@ -23,6 +29,11 @@
 
 .rec{
     transition: all 0.3s ease-out;
+}
+
+.imgCarousel{
+  width: 190px;
+  cursor: pointer;
 }
 
 button.rec-dot{
