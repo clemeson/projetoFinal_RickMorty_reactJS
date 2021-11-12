@@ -4,7 +4,7 @@ import React from "react";
 import './style.css';
 import { Link } from "react-router-dom";
 import img_black from './img/bg_welcome.png';
-import { Typewriter, useTypewriter, Cursor } from 'react-simple-typewriter';
+
 
 import portal from './img/portal.gif';
 import rickhead from './img/rick.gif';
