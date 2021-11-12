@@ -1,35 +1,78 @@
-#containerHome{
-  width: 70%;
-  margin: 0 auto;
-}
+  #containerHome{
+    width: 70%;
+    margin: 0 auto;
+  }
+  .img_container{
+    width: 50%;
+   
+  }
 
 
-#body{
-  background-image: url(./img/712660.jpg);
-  background-attachment: fixed;
-  min-height: 300px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 10vh;
+  .container_text{
+    height: 500px;
+    display: flex;
+    padding:60px 40px;
+    text-align: center;
+    line-height: 45px;
+    flex-direction: column;
+    align-items: center;
+  
+    width: 50%;
+    color:white;
+    font-size: 22px;
+    border: 3px solid #D705F2;
+    box-shadow: 0px 0px 35px #D705F2, 0px 0px 15px #D705F2 inset;
+
+  }
+.button_started{
+  margin-top: 80px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #35123a;
+  border-radius: 10px;
+  padding: 1.2rem;
+  width: 200px;
+  background: #39FF14;
+ 
+  
+       
 }
-#sec-title{
-  background-color: #0000003f;
+  .img_black{
+    margin-left: 100px;
+  }
+  #body{
+
+    background-attachment: fixed;
+    min-height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10vh;
+  }
+  #sec-title{
+
+    
+    border-bottom: solid 3px #ffffffad;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+   
+  }
+  #sec-title2{
+
+  
   border-bottom: solid 3px #ffffffad;
   height: 90vh;
   display: flex;
   align-items: center;
 }
-#sec-title2{
-  background-color: #0000007a;
-  border-bottom: solid 3px #ffffffad;
-  height: 90vh;
-  display: flex;
-  align-items: center;
+  .img_black{
+  padding-bottom: 150px;
 }
+
 #title{
   padding: 50px;
-  font-size: 4em;
+  font-size: 3em;
   color: white;
   text-shadow: 9px 9px 9px #000000;
   max-width: 50vw;
@@ -42,7 +85,7 @@
 }
 .sections{
   animation: gradient 10s ease alternate infinite;
-  background-image: radial-gradient(circle, #1b0126, #150221, #0e021c, #070116, #01000d);
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -145,10 +188,7 @@
       text-align: center;  
       width: 100%;     
   }
-  #portal{
-      max-width: 300px;
-      padding: 20px;
-  }
+ 
   #box-heads{
       display: none;
   }

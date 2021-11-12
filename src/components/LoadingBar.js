@@ -67,7 +67,7 @@ const HrPurple = styled.hr`
     width: 100%;
     
     animation-name: ${keyLine2};
-    animation-duration: ${props.time+'s'};
+    animation-duration: ${props.time+'s'}? ${props.time+'s'}: 1s;
     animation-timing-function: ease-in;
     border: 2px solid #D705F2;
     box-shadow: 0px 0px 35px #D705F2, 0px 0px 15px #D705F2 inset;

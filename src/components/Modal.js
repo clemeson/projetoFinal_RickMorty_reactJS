@@ -79,8 +79,8 @@ const ModalContent = styled.div`
     
 
     .container-content{
-        margin: 0 auto;
-        width: 300px;
+    margin: 0 auto;
+    width: 300px;
     height: 500px;
     display:flex;
     flex-direction:column;
