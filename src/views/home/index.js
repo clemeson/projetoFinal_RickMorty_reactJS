@@ -4,6 +4,7 @@ import React from "react";
 import './style.css';
 import { Link } from "react-router-dom";
 import img_black from './img/bg_welcome.png';
+import iconDown from './img/down.svg';
 
 
 
@@ -29,7 +30,9 @@ export default function Home() {
 
         <div id='body'>
             <div id="containerHome">
+                
                 <section id='sec-title'>
+                <div className="container-topo">
                     <div className="container_text">
                     <img className="img_tabela" src={frame}/>
                     <button className="button_started">Get Started</button>
@@ -38,8 +41,10 @@ export default function Home() {
                     <div className="img_container">
                         <img className="img_black" src={img_black} />
                     </div>
-
+                    </div>
+                    <a href="#sec-title2" className="container-down" ><img class="icon-down" src={iconDown}/></a>
                 </section>
+                
                 <section className='sections'>
 
                     <div id='portal-div'>
