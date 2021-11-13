@@ -5,6 +5,7 @@ import './style.css';
 import { Link } from "react-router-dom";
 import img_black from './img/bg_welcome.png';
 import iconDown from './img/down.svg';
+import imgPersonas from './img/personas.svg'
 
 
 
@@ -42,39 +43,30 @@ export default function Home() {
                         <img className="img_black" src={img_black} />
                     </div>
                     </div>
-                    <a href="#sec-title2" className="container-down" ><img class="icon-down" src={iconDown}/></a>
+                    <a href="#sec-title1" className="container-down" ><img class="icon-down" src={iconDown}/></a>
+                </section>
+
+
+             
+                <section id='sec-title1'>
+                <div className="container-topo">
+                <div className="container_text3">
+                    <h1>Vamos viajar num mundo diferente, perscrutar dimensões
+                         e galáxias, conhecer personagens e por onde andam a nossa dupla de viajantes intergalácticos preferida.
+                    Vamos Começar?</h1>
+                    <button className="button_started">Get Started</button>
+
+                    </div>
+                    <div className="img_container">
+                    <img className="img_black" className="gifHead" src={gifcell} />
+                        <img  className="gifHead" src={squanch}/>
+                    </div>
+                   
+                    </div>
+                  
                 </section>
                 
-                <section className='sections'>
-
-                    <div id='portal-div'>
-                    
-                    </div>
-                    <div id="text-section2">
-
-                    </div>
-                </section>
-                <section className='sections'>
-                    <div id='box-heads'>
-                        <img className='heads' src={rickhead}></img>
-                        <img className='heads' src={mortyhead}></img>
-                    </div>
-                    <div id='text2'>
-                        <h2 id='h2'>Vamos viajar num mundo diferente, perscrutar dimensões e galáxias, conhecer personagens e por onde andam a nossa dupla de viajantes intergalácticos preferida.</h2>
-                        <Link id="link" to="/character"> Vamos Começar?</Link>
-                        <p id='sms-link'>Cique aqui para ser redirecionado à página de personagens.</p>
-                    </div>
-                </section>
-                <section id='sec-title2'>
-                    <div>
-                        <h1 id='end-title'>Experimente também na versão Mobile!</h1>
-
-                    </div>
-                    <div id='cell-giffs'>
-                        <img id='gifcell' src={gifcell}></img>
-                        <img id='squanch' src={squanch}></img>
-                    </div>
-                </section>
+               
             </div>
         </div>
     )
