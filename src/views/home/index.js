@@ -5,16 +5,14 @@ import './style.css';
 import { Link } from "react-router-dom";
 import img_black from './img/bg_welcome.png';
 import iconDown from './img/down.svg';
-import imgPersonas from './img/personas.svg'
-
-
-
+import './responsive.css'
 import rickhead from './img/rick.gif';
 import mortyhead from './img/morty.gif';
 import gifcell from './img/gifcell.gif';
 import squanch from './img/squanch.gif';
 import frame from './img/frame.png';
 import { useEffect, useState } from "react/cjs/react.development";
+import ModalComponent from '../../components/Modal';
 
 
 
@@ -24,7 +22,7 @@ import { useEffect, useState } from "react/cjs/react.development";
 export default function Home() {
 
  
-
+    const [showModal, setShowModal] = useState('')
    
 
     return (
@@ -58,8 +56,8 @@ export default function Home() {
 
                     </div>
                     <div className="img_container">
-                    <img className="img_black" className="gifHead" src={gifcell} />
-                        <img  className="gifHead" src={squanch}/>
+                   
+                       
                     </div>
                    
                     </div>

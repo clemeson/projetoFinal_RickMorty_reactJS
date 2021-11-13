@@ -59,7 +59,7 @@ import LoadingComponent from "../../components/Loading";
     useEffect(()=>{
         get(character)
     }, [id])
-
+    
     function EscolhaUmPersona(){
         return(
             <div className="container-welcome">

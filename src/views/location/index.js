@@ -73,8 +73,8 @@ function Location() {
         }
 
                <div className="div-text">
-                <p> Ninguém existe de propósito, ninguém pertence a lugar nenhum</p>
-                <p className="text-1"> Descubra os Lugares para onde Rick e Morty fazem suas viagens interdimensionais</p>
+              
+                <p className="text-1"> Ninguém existe de propósito, ninguém pertence a lugar nenhum</p>
 
             </div>
             <div class="container-dimensoes">

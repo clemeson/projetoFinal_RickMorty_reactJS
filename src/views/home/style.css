@@ -30,8 +30,9 @@
     width: 250px;
   }
   .container_text{
-
-    height: 500px;
+    background: #170122;
+    min-width: 250px;
+    height: 480px;
     display: flex;
     padding:60px 40px;
     text-align: center;
@@ -41,17 +42,14 @@
   
     
 
-    width: 50%;
+    max-width: 50%;
     color:white;
     font-size: 22px;
     border: 3px solid #D705F2;
     box-shadow: 0px 0px 35px #D705F2, 0px 0px 15px #D705F2 inset;
 
   }
-  .text-prepare{
-    transform: rotate(-5deg);
-    line-height: 50px;
-  }
+
 .button_started{
   transition: all .3s ease-in-out;
   margin-top: 80px;
@@ -60,37 +58,26 @@
   color: #140220;
   border-radius: 10px;
  cursor: pointer;
+ border: none;
   padding: 1rem;
   width: 240px;
-  transform: rotate(-5deg);
+
   background: #39FF14;
   animation: animeBtn 1.5s;
  
   
        
 }
-.container_text2{
-  height: 500px;
-  color: white;
-  display: flex;
-  padding:100px 100px;
-  text-align: center;
-  line-height: 45px;
-  flex-direction: column;
-  align-items: center;
-}
-.img-personas{
-  width: 500px;
-  padding: 10px;
-  
-  border: 3px solid #39FF14;
-  box-shadow: 0px 0px 35px #39FF14, 0px 0px 15px #D705F2 inset;
-}
+
+
 
 .container-topo{
   display: flex;
   align-items: center;
   height: 90%;
+
+  width: 70%;
+  margin: 0 auto;
 }
 
 .icon-down{
@@ -112,15 +99,15 @@
 
 .button_started2{
   transition: all .3s ease-in-out;
-  margin-top: 80px;
+  margin-top: 70px;
   font-weight: bold;
   font-size: 20px;
   color: white;
   border-radius: 10px;
- cursor: pointer;
+  cursor: pointer;
   padding: 1rem;
   width: 240px;
-  transform: rotate(-5deg);
+
   background: #D705F2;
   animation: animeBtn 1.5s;
 }
@@ -130,13 +117,13 @@
 }
   .img_black{
     margin-left: 130px;
-    width: 350px;
+    max-width: 300px;
     padding-top: -20px;
     margin-bottom: 120px;
   }
 
   .img_tabela{
-    width: 450px;
+    width: 350px;
   }
   #body{
 
@@ -159,16 +146,7 @@
   }
 
 
-  .container_text3{
-    height: 500px;
-    color: white;
-    display: flex;
-    padding:100px 100px;
-    text-align: center;
-    line-height: 45px;
-    flex-direction: column;
-    align-items: center;
-  }
+  
   #sec-title1{
 
   
@@ -203,14 +181,7 @@
   height: 90vh;
 }
 
-#sec-title3{
-  border-bottom: solid 3px #ffffffad;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
-}
 #text1, #text2{
   padding: 50px;
   max-width: 600px;
