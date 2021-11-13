@@ -3,7 +3,7 @@ import api from '../../services/api'
 import CarouselComponent from '../../components/Carousel'
 import './style.css'
 import LoadingComponent from '../../components/Loading'
-import LoadingBar from '../../components/LoadingBar'
+
 
 
 
@@ -22,6 +22,7 @@ function Location() {
 
     async function getLocation() {
         let response = await api.get(`/location/`)
+      
         let json = response.data.results
 
         setArray(json)
@@ -32,14 +33,13 @@ function Location() {
     useEffect(() => {
      
         getLocation()
-        setLoading(true)
+        
     }, [])
   
 
 
     //buscar filtrada na api por type
     async function getType(type) {
-
         let response = await api.get(`/location/?type=${type}`)
         setLoading(false)
         let jsonType = response.data.results
@@ -51,6 +51,7 @@ function Location() {
 
 
     useEffect(() => {
+        setLoading(true)
         getType(type)
     }, [type])
 
@@ -70,6 +71,11 @@ function Location() {
         {loading &&
         <LoadingComponent />
         }
+
+            <div className="div-text">
+                <p className="text-1"> Descubra os Lugares para onde Rick e Morty fazem suas viagens interdimensionais</p>
+
+            </div>
             <div class="container-dimensoes">
 
                 <form className="form">

@@ -6,11 +6,12 @@ import { Link } from "react-router-dom";
 import img_black from './img/bg_welcome.png';
 
 
-import portal from './img/portal.gif';
+
 import rickhead from './img/rick.gif';
 import mortyhead from './img/morty.gif';
 import gifcell from './img/gifcell.gif';
 import squanch from './img/squanch.gif';
+import frame from './img/frame.png';
 import { useEffect, useState } from "react/cjs/react.development";
 
 
@@ -20,14 +21,9 @@ import { useEffect, useState } from "react/cjs/react.development";
 
 export default function Home() {
 
-    const handleType = (count: number) => {
-        // access word count number
-        console.log(count)
-    }
+ 
 
-    const handleDone = () => {
-        return 2
-    }
+   
 
     return (
 
@@ -35,7 +31,7 @@ export default function Home() {
             <div id="containerHome">
                 <section id='sec-title'>
                     <div className="container_text">
-                    <h1 className="text-prepare">Prepare-se para ver como realmente se reutiliza component</h1>
+                    <img className="img_tabela" src={frame}/>
                     <button className="button_started">Get Started</button>
 
                     </div>
@@ -47,6 +43,9 @@ export default function Home() {
                 <section className='sections'>
 
                     <div id='portal-div'>
+                    
+                    </div>
+                    <div id="text-section2">
 
                     </div>
                 </section>

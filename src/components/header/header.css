@@ -25,7 +25,7 @@ header, ul {
 }
 #header{
 
-    height: 70px;
+    height: 100px;
     padding: 1rem;
     
     width: 100%;
@@ -83,7 +83,7 @@ header, ul {
         height: 0px;
         transition: 0.6s;
         background: rgba(0, 0, 0, 0.87);
-        z-index: 1000;
+        z-index: 10000;
         visibility: hidden;
         overflow-y: hidden;
     }
