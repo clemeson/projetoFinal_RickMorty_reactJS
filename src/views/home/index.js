@@ -13,7 +13,7 @@ import squanch from './img/squanch.gif';
 import frame from './img/frame.png';
 import { useEffect, useState } from "react/cjs/react.development";
 import ModalComponent from '../../components/Modal';
-
+import Footer from "../../components/footer";
 
 
 
@@ -66,6 +66,7 @@ export default function Home() {
                 
                
             </div>
+            <Footer/>
         </div>
     )
 }
