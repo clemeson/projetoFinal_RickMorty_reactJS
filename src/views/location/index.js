@@ -3,7 +3,7 @@ import api from '../../services/api'
 import CarouselComponent from '../../components/Carousel'
 import './style.css'
 import LoadingComponent from '../../components/Loading'
-
+import Footer from "../../components/footer";
 
 
 
@@ -105,7 +105,6 @@ function Location() {
               
             </div>
        
-        
             </div>
 
 
