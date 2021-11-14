@@ -20,21 +20,31 @@ import ModalComponent from '../../components/Modal';
 
 
 export default function Home() {
-
- 
     const [showModal, setShowModal] = useState('')
+   function setModal(){
+       console.log('ok')
+       setShowModal(1)
+   }
+ 
+    
    
 
     return (
 
         <div id='body'>
+            <ModalComponent
+             visible={showModal}
+             setModal={setShowModal}
+             view={true}
+            >           
+            </ModalComponent>
             <div id="containerHome">
                 
                 <section id='sec-title'>
                 <div className="container-topo">
                     <div className="container_text">
                     <img className="img_tabela" src={frame}/>
-                    <button className="button_started">Get Started</button>
+                    <button className="button_started" onClick={setModal}>Get Started</button>
 
                     </div>
                     <div className="img_container">
@@ -57,9 +67,9 @@ export default function Home() {
                     </div>
                     <div className="img_container">
                    
-                       
+
                     </div>
-                   
+
                     </div>
                   
                 </section>

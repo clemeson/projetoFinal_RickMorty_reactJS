@@ -63,7 +63,7 @@ import LoadingComponent from "../../components/Loading";
     function EscolhaUmPersona(){
         return(
             <div className="container-welcome">
-                <h1>Escolha um personagem, clikando na foto</h1>
+                <h1>Escolha um personagem, clicando na foto</h1>
             </div>
         )
     }
