@@ -6,6 +6,9 @@ import GalleryComponent from "./views/about/Gallery";
 import Location from "./views/location";
 import Home from "./views/home";
 import PageNotFound from './views/notfound/index'
+import Login from "./views/login";
+import CadastreSe from "./views/login/cadastro";
+
 
  function Routes(){
 
@@ -22,6 +25,10 @@ import PageNotFound from './views/notfound/index'
 
                               <Route path="/about" exact component={Sobre} />
                               <Route path="/about/gallery" exact component={GalleryComponent} />
+
+                              <Route path='/login' exact component={Login}/>
+                              <Route path='/cadastre-se' exact component={CadastreSe}/>
+
 
                               <Route path="*"  component={PageNotFound} />
                             

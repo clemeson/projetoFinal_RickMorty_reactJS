@@ -41,7 +41,7 @@ export default function Home() {
                 <div className="container-topo">
                     <div className="container_text">
                     <img className="img_tabela" src={frame}/>
-                    <button className="button_started">Get Started</button>
+                    <Link className='button-started' to='/login'>Get started</Link>
 
                     </div>
                     <div className="img_container">
