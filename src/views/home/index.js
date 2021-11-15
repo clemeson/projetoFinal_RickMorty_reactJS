@@ -13,9 +13,13 @@ import squanch from './img/squanch.gif';
 import frame from './img/frame.png';
 import { useEffect, useState } from "react/cjs/react.development";
 import ModalComponent from '../../components/Modal';
+
+import Footer from "../../components/footer";
+
 import portal from './img/portal.gif'
 import  net from './img/net.png'
 import hbo from './img/hbo.png'
+
 
 
 
@@ -37,7 +41,7 @@ export default function Home() {
                 <div className="container-topo">
                     <div className="container_text">
                     <img className="img_tabela" src={frame}/>
-                    <button className="button_started">Get Started</button>
+                    <Link className='button-started' to='/login'>Get started</Link>
 
                     </div>
                     <div className="img_container">

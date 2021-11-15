@@ -246,6 +246,7 @@
 #sms-link{
   font-size: 14px;
   padding: 20px;
+  text-align: center;
 }
 #portal{
   width: 500px;
@@ -277,6 +278,8 @@
   padding: 10px;
   margin: 10px;
   background: #0000003e;
+  white-space: nowrap;
+
 }
 #link:hover{
   color: #AB05F2;

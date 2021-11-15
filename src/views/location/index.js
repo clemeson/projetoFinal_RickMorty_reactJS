@@ -3,7 +3,7 @@ import api from '../../services/api'
 import CarouselComponent from '../../components/Carousel'
 import './style.css'
 import LoadingComponent from '../../components/Loading'
-
+import Footer from "../../components/footer";
 
 
 
@@ -74,7 +74,7 @@ function Location() {
 
                <div className="div-text">
               
-                <p className="text-1"> Ninguém existe de propósito, ninguém pertence a lugar nenhum</p>
+                <p className="text-1"> Ninguém existe de propósito, ninguém pertence a lugar algum.</p>
 
             </div>
             <div class="container-dimensoes">
@@ -105,7 +105,6 @@ function Location() {
               
             </div>
        
-        
             </div>
 
 
