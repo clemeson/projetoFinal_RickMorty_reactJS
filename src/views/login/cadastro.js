@@ -2,6 +2,7 @@ import React from "react";
 
 
 export default function CadastreSe() {
+   
     return(
         <div id='sec-login'>
             <div id='div-login'>
