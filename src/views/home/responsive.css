@@ -1,6 +1,4 @@
 
-
-
 @media (max-width: 1400px){
     .img_tabela{
         width: 280px;
@@ -19,7 +17,6 @@
     }
     .img_black{
         width: 250px;
-        
         margin-left: 50px;
     }
 
@@ -49,8 +46,8 @@
         
     }
     .img_black{
-        width: 200px;
-        margin-left: 20px;
+        width: 50px;
+        margin-left: 3px;
     }
 
     .container_text{
@@ -64,9 +61,9 @@
     }
     .img_container{
        
-        width: 30px;
+        width: 10px;
        position: absolute;
-      left: -15px;
+       left: -5px;
        top: 150px;
        z-index: -1;
     }
