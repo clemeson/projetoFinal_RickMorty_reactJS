@@ -9,6 +9,7 @@ header, ul {
     position: fixed;
     width: 100%;
     background:#0b000cfb;
+    z-index: 1000;
 }
 .link a{
     text-decoration: none;
