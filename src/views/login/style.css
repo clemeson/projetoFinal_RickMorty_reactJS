@@ -59,12 +59,18 @@
 
 @media (max-width: 788px) {
     #sec-login{
-      width: 90%;  
+        width: 90%;
+        height: 120vh;  
+    }
+    #div-login{
+        width: 100%;
+        height: 80vh;  
+
     }
     .txt-inputs{
-      width: 90%;
+        width: 90%;
     }
     #btn-logar{
-      width: 50%;
+        width: 50%;
     }
 }
