@@ -10,6 +10,15 @@ import LoadBar from './LoadingBar';
 
 
 
+
+function ModalComponent(props) {
+
+    
+   
+    function hidenModal() {
+        props.setModal('')
+    }
+
 const ModalBackground = styled.div`
 
     position:fixed;
@@ -28,8 +37,11 @@ const ModalBackground = styled.div`
 `
 
 const ModalContent = styled.div`
-    width: 400px;
     
+    width: ${props.view == true ? 718+'px': 400+'px'};
+    @media(max-width:780px){
+       
+    }
   @media(max-width: 720px) {
         width: 320px;
         height: 480px;
@@ -79,8 +91,8 @@ const ModalContent = styled.div`
     
 
     .container-content{
-        margin: 0 auto;
-        width: 300px;
+    margin: 0 auto;
+    width: 300px;
     height: 500px;
     display:flex;
     flex-direction:column;
@@ -129,6 +141,30 @@ const ModalContentChild = styled.div`
         display: flex;
         flex-direction: column;
 
+        .videoWelcome{
+           
+           
+            width: 700px;
+            @media(max-width: 370px){
+                width: 275px;
+                height: 380px;
+               
+            }
+            @media(max-width:780px){
+                width: 314px;
+                height: 470px;
+
+              
+            }
+        
+
+            @media(max-width: 510px){
+                width: 275px;
+             height: 432px;
+            }
+
+          
+        }
 
     img{
        
@@ -172,21 +208,25 @@ const DivStatus = styled.div`
 
 `
 
-function ModalComponent(props) {
 
-    const [color, setColor] = useState('')
+
+   
     function hidenModal() {
         props.setModal('')
     }
+
+  
 
 
     return (
         <>
             {props.visible >= 1 &&
                 <ModalBackground onClick={hidenModal}>
-                    <ModalContent>
+                    <ModalContent className="modalContent">
                         <ModalContentChild>
-                            {props.Persona.map((i, idx) => (
+                     
+                            
+                            {props.Persona?.map((i, idx) => (
                                 <div className="container-content">
                                     <img className="img-profile" key={idx} src={i.image} />
 
@@ -220,6 +260,10 @@ function ModalComponent(props) {
                               
                                 </div>
                             ))}
+
+                               
+                              {props.Persona?  false :  <iframe className="videoWelcome" width="1280" height="720" src="https://www.youtube.com/embed/_BCQtmEVYJY" title="Rick And Morty Pilot" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>}
+                                 
                         </ModalContentChild>
                     </ModalContent>
                 </ModalBackground>

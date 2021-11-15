@@ -4,7 +4,7 @@ import ModalComponent from '../../components/Modal';
 import api from "../../services/api";
 import './style.css';
 import LoadingComponent from "../../components/Loading";
-
+import Footer from "../../components/footer";
 
 
 
@@ -59,11 +59,12 @@ import LoadingComponent from "../../components/Loading";
     useEffect(()=>{
         get(character)
     }, [id])
-
+    
     function EscolhaUmPersona(){
         return(
             <div className="container-welcome">
-                <h1>Escolha um personagem, clikando na foto</h1>
+                <h1>Escolha um personagem, clicando na foto</h1>
+                
             </div>
         )
     }

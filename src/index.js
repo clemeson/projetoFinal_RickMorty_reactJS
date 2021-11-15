@@ -8,6 +8,8 @@ const GlobalStyle = createGlobalStyle`
   
   #root{
     height: 100vh;
+    
+    
    
    
    
@@ -16,8 +18,8 @@ const GlobalStyle = createGlobalStyle`
 body{
 animation: gradient 10s ease alternate infinite;
 background-image: radial-gradient(circle, #1b0126, #150221, #0e021c, #070116, #01000d);
-
 height: 100vh;
+width: 100vw;
 
 
 }
@@ -40,6 +42,7 @@ height: 100vh;
     margin:0;
     padding:0;
     box-sizing:border-box;
+ 
     
   }
 

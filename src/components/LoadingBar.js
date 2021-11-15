@@ -15,7 +15,7 @@ const keyLine = keyframes`
 
 
 0%{
-    border-width: 2px solid #74E452;
+    border-width: 2px solid #39FF14;
     width: 1%;
     transition: all 0.5s ease-out
 }
@@ -23,9 +23,9 @@ const keyLine = keyframes`
 
 
 100%{
-    border: 2px solid #74E452;
+    border-width: 2px solid #39FF14;
     width: 90%;
-    box-shadow: 0px 0px 35px #74E452, 0px 0px 15px #74E452 inset;
+   
 }
 
 `
@@ -33,7 +33,7 @@ const keyLine = keyframes`
 
 const keyLine2 = keyframes`
 0%{
-    border-width: 2px solid #D705F2;
+    border: 2px solid #D705F2;
     width: 1%;
     transition: all 0.5s ease-out
 }
@@ -52,7 +52,7 @@ const Hr = styled.hr`
     width: 100%;
     margin-top: 5px;
     animation-name: ${keyLine};
-    animation-duration: ${props.time+'s'};
+    animation-duration: ${props.time+'s' ? props.time+'s': 1};
     animation-timing-function: ease-in;
     border: 2px solid #39FF14;
     box-shadow: 0px 0px 35px #74E452, 0px 0px 15px  inset;
@@ -64,13 +64,13 @@ const Hr = styled.hr`
 
 
 const HrPurple = styled.hr`
-    width: 100%;
-    
-    animation-name: ${keyLine2};
-    animation-duration: ${props.time+'s'};
+   width: 100%;
+   
+    animation-name: ${keyLine};
+    animation-duration: ${props.time+'s' ? props.time+'s': 1};
     animation-timing-function: ease-in;
     border: 2px solid #D705F2;
-    box-shadow: 0px 0px 35px #D705F2, 0px 0px 15px #D705F2 inset;
+    box-shadow: 0px 0px 35px #D705F2, 0px 0px 15px  inset;
 
  
 

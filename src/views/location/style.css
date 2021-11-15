@@ -5,7 +5,7 @@
 }
 .rec-slider-container{
     
-    
+    z-index: 0;
     text-align: center;
     
     
@@ -23,12 +23,14 @@
   cursor: pointer;
 }
 .container{
+    z-index: -1;
     padding-top:140px ;
     display: flex;
     flex-direction: column;
     width: 70%;
     margin: 0 auto;
     height: 100%;
+   
 }
 
 p{
@@ -50,30 +52,53 @@ p{
 .form{
     display: flex;
     margin:0 0 70px 0;
+    
 }
 .typeselect{
-    
+    transition: all 0.5s ease-out;
     margin: 0 auto;
-    background: green;
+    background: #190125;
     color: white;
-    border: 1px solid green;
+
     border-radius: 2px;
     outline: none;
     padding:.5rem;
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
+    border: 3px solid #39FF14;
+    box-shadow: 0px 0px 35px #39FF14, 0px 0px 15px #D705F2 inset;
+    
+    
 
     
 }
-.typeselect option{
-    display: inline-flex;
-}
 
-.rec{
-    margin-bottom: 20px;
-}
+
+
 
 .card{
-    padding-top: 25px;
+    padding-top: 35px;
+    font-size:16px;
+    margin:5px;
+}
+
+
+.div-text{
+    height: 200px;
+    width:100%;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.text-1{
+    margin-bottom: 30px;
+}
+
+.text-byRick{
+    font-size: 13px;
+    width: 200px;
+     margin-right: 0;
 }

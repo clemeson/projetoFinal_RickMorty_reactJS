@@ -11,6 +11,7 @@ import LoadingBar from "../LoadingBar";
 
 
 
+
 export default function Header() {
 
     function toggleMenu (){
@@ -42,6 +43,9 @@ export default function Header() {
                         </li>
                         <li>
                         <Link className="link" to="/about"><Btn text='Sobre a Série'/></Link>
+                        </li>
+                        <li>
+                        <Link className="link" to="/fanfics/posts"><Btn text='Fanfics'/></Link>
                         </li>
                     </ul>  
                 </nav>

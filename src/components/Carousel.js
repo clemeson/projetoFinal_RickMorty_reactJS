@@ -18,7 +18,7 @@ function CarouselComponent(props){
 
     const [handleId, setHandleId] = useState('')
     const [vw, setVw] = useState(window.innerWidth)
-    const [card, setCard] = useState(5)
+    const [card, setCard] = useState(4)
     //pega click e envia id da foto clickada para o arquivo que enviou a funcao na props
     useEffect(()=>{
         if(props.getId){
@@ -47,20 +47,19 @@ function CarouselComponent(props){
         <>
         <Carousel
          itemsToShow={card}
-         showArrows={props.viewWidth ==1? true : false}
+         showArrows={props.viewWidth == 1? true : false}
          pagination={props.viewWidth == 1? false : true}
-  
-         
-        
-        
          >
- 
+            
           {props.imagens.map((item, index)=>(   
 
+
+        
                 <div>
                     
                 {props.text &&    
-                <div className='card'>{item.name}<br/><LoadingBar time={.5}/>{item.type}<br/><LoadingBar/>{item.dimension}<LoadingBar/></div>
+                
+                <div className='card'>{item.name}<br/><LoadingBar time={.5}/>{item.type}<br/><LoadingBar/>{item.dimension}<br/><LoadingBar/></div>
                 }   
 
                {item.image &&
