@@ -44,6 +44,9 @@ export default function Header() {
                         <li>
                         <Link className="link" to="/about"><Btn text='Sobre a Série'/></Link>
                         </li>
+                        <li>
+                        <Link className="link" to="/fanfics/posts"><Btn text='Fanfics'/></Link>
+                        </li>
                     </ul>  
                 </nav>
             </header>
