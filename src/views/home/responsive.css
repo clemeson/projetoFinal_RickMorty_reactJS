@@ -3,7 +3,7 @@
 
 @media (max-width: 1400px){
     .img_tabela{
-        width: 180px;
+        width: 280px;
     }
     .container_text{
         height: 380px;
@@ -24,14 +24,15 @@
     }
 
     .img_tabela{
-        width: 250px;
+        width: 350px;
     }
 
     .container_text{
-        height: 360px;
+        height: 460px;
+        width: 460px;
     }
 }
-@media (max-width: 70px){
+@media (max-width: 280px){
 
     .container-topo{
         
@@ -49,21 +50,23 @@
     }
     .img_black{
         width: 200px;
-        margin-left: 30px;
+        margin-left: 20px;
     }
 
     .container_text{
         height: 300px;
         margin-left: 70px;
         min-width: 200px;
+        font-size: 10px;
     }
     .img_tabela{
         width: 210px;
     }
     .img_container{
        
+        width: 30px;
        position: absolute;
-       left: -15px;
+      left: -15px;
        top: 150px;
        z-index: -1;
     }
