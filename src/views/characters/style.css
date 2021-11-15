@@ -11,13 +11,15 @@
     display: flex;
     border: 8px solid #39FF14;
     box-shadow: 0px 0px 35px #39FF14, 0px 0px 15px #D705F2 inset;
-    max-width: 70%;
+    max-width: 58%;
+    height: 180px;
+    margin-bottom: 150px;
     
 }
 
 
 .rec-carousel{
-    width:399px;
+    
     display: flex;
     justify-content: center;
    

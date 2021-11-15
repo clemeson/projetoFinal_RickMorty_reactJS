@@ -69,6 +69,10 @@
   animation: animeBtn 1.5s;
  
 }
+
+
+
+
 .container-topo{
   display: flex;
   align-items: center;
@@ -335,6 +339,7 @@
   }
 }
 
+/* modal video*/
 .img_black3{
   margin-left: 40px;
   max-width: 200px;
