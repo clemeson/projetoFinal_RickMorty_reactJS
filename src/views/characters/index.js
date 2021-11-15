@@ -4,7 +4,7 @@ import ModalComponent from '../../components/Modal';
 import api from "../../services/api";
 import './style.css';
 import LoadingComponent from "../../components/Loading";
-
+import Footer from "../../components/footer";
 
 
 
@@ -64,6 +64,7 @@ import LoadingComponent from "../../components/Loading";
         return(
             <div className="container-welcome">
                 <h1>Escolha um personagem, clicando na foto</h1>
+                
             </div>
         )
     }

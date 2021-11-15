@@ -10,6 +10,8 @@ import Create from './views/fanfics/Create'
 import GetAllPosts from './views/fanfics/GetPosts'
 import DoeFanfics from './views/fanfics/Doe'
 
+import Login from "./views/login";
+import CadastreSe from "./views/login/cadastro";
 
 
  function Routes(){
@@ -34,6 +36,10 @@ import DoeFanfics from './views/fanfics/Doe'
 
                               <Route path="/about" exact component={Sobre} />
                               <Route path="/about/gallery" exact component={GalleryComponent} />
+
+                              <Route path='/login' exact component={Login}/>
+                              <Route path='/cadastre-se' exact component={CadastreSe}/>
+
 
                               <Route path="*"  component={PageNotFound} />
                             
