@@ -3,7 +3,7 @@
 
 @media (max-width: 1400px){
     .img_tabela{
-        width: 280px;
+        width: 180px;
     }
     .container_text{
         height: 380px;
@@ -31,7 +31,7 @@
         height: 360px;
     }
 }
-@media (max-width: 680px){
+@media (max-width: 70px){
 
     .container-topo{
         
@@ -63,7 +63,7 @@
     .img_container{
        
        position: absolute;
-      left: -15px;
+       left: -15px;
        top: 150px;
        z-index: -1;
     }
