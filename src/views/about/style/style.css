@@ -13,7 +13,6 @@ body{
 #to-galery, a{
     list-style: none;
     padding: 10px;
- 
     color: #39FF14;
     text-transform: uppercase;
     text-decoration: none;
@@ -23,7 +22,7 @@ body{
     transition: .8s;
 }
  #to-galery:hover{
-    color: black;
+    color: #AB05F2;
     background: #39FF14;
     border-radius: 8px;
     box-shadow:
@@ -67,9 +66,6 @@ body{
     font-size: larger;
     margin-top: 20px;
     flex-direction: column;
-}
-.linkGaleria{
-    background:  #39FF14;;
 }
 
 #img1{
