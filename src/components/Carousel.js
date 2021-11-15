@@ -47,12 +47,8 @@ function CarouselComponent(props){
         <>
         <Carousel
          itemsToShow={card}
-         showArrows={props.viewWidth ==1? true : false}
+         showArrows={props.viewWidth == 1? true : false}
          pagination={props.viewWidth == 1? false : true}
-  
-         
-        
-        
          >
             
           {props.imagens.map((item, index)=>(   

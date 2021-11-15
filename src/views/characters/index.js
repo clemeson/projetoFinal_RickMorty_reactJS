@@ -63,6 +63,7 @@ import Footer from "../../components/footer";
     function EscolhaUmPersona(){
         return(
             <div className="container-welcome">
+                <h1>Escolha um personagem, clicando na foto</h1>
                 
             </div>
         )

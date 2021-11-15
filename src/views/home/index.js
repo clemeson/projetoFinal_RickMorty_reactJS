@@ -27,21 +27,31 @@ import hbo from './img/hbo.png'
 
 
 export default function Home() {
-
- 
     const [showModal, setShowModal] = useState('')
+   function setModal(){
+       console.log('ok')
+       setShowModal(1)
+   }
+ 
+    
    
 
     return (
 
         <div id='body'>
+            <ModalComponent
+             visible={showModal}
+             setModal={setShowModal}
+             view={true}
+            >           
+            </ModalComponent>
             <div id="containerHome">
                 
                 <section id='sec-title'>
                 <div className="container-topo">
                     <div className="container_text">
                     <img className="img_tabela" src={frame}/>
-                    <Link className='button-started' to='/login'>Get started</Link>
+                    <button className="button_started" onClick={setModal}>Get Started</button>
 
                     </div>
                     <div className="img_container">
@@ -60,9 +70,13 @@ export default function Home() {
 
                     </div>
                     <div className="img_container">
+                   
+
+                    </div>
+
                         <img className="img_black1" src={portal} />
                     </div>
-                    </div>
+                  
                     <a href="#sec-title1" className="container-down" ><img class="icon-down" src={iconDown}/></a>
                 </section>
                 <section id='sec-title'>

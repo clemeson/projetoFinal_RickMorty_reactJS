@@ -31,7 +31,7 @@ function Location() {
  
 
     useEffect(() => {
-     
+        setLoading(true)
         getLocation()
         
     }, [])
@@ -51,7 +51,7 @@ function Location() {
 
 
     useEffect(() => {
-        setLoading(true)
+        
         getType(type)
     }, [type])
 
@@ -76,7 +76,12 @@ function Location() {
               
                 <p className="text-1"> Ninguém existe de propósito, ninguém pertence a lugar algum.</p>
 
-            </div>
+               <p className="text-1"> Veja os lugares do universo Rick & Morty</p>
+
+                <p className="text-2"> Ninguém existe de propósito, ninguém pertence a lugar nenhum! </p>
+                <p className="text-byRick"> By Rick Sanchez</p>
+
+                </div>
             <div class="container-dimensoes">
 
                 <form className="form">
