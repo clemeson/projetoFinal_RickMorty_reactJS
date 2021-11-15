@@ -27,18 +27,34 @@
     margin: 0 auto;
     height: 300px;
   
+
+  
    
+}
+
+.main-fanfics{
+    height:100%;
+  
+    width: 100%;
+    display: flex;
 }
 
 .insert-text{
     height: 400px;
     width: 600px;
-    padding: 1rem;
+    padding: 1.2rem;
     border: none;
+    color: white;
     outline: none;
-    box-shadow: 0px 0px 35px , 0px 0px 15px #5b1766 inset;
+    background: rgb(83, 81, 81);
     font-size: 20px;
     border-radius: 3px;
+    border-radius: 8px;
+    border: solid 1px #39ff14;
+    box-shadow:
+    0 0 3px #39FF14, 
+    0 0 9px #39FF14,
+    0 0 50px #39FF14;
 }
 .label{
     color: white;
@@ -62,11 +78,34 @@
     margin-bottom: 30px;
     
   }
+.sidebar-fanfics{
+    width: 20%;
+    margin-left: 60px;
+    border: solid 1px #39ff14;
+    box-shadow:
+    0 0 3px #39FF14, 
+    0 0 9px #39FF14,
+    0 0 50px #39FF14;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  
+    
+}
 
+.sidebar-fanfics p{
+    color: white;
+    font-size:19px;
+    border-bottom-color: #39FF14 ;
+    margin: 15px 0;
+    padding: .5rem;
+    cursor: pointer;
+}
 .container-forum{
     margin: 0 auto;
     padding-top: 140px;
-    width: 70%;
+    width: 100%;
     display:flex;
 }
 
@@ -75,7 +114,7 @@
 
 .section{
    padding-top: 10px;
-    width:80%;
+    width:100%;
     height:100vh;
     margin: 0 auto;
 }
@@ -86,18 +125,26 @@
   margin-top: 30px;
   font-weight: bold;
   font-size: 20px;
-  color: #140220;
+  color: white;
   border-radius: 3px;
  cursor: pointer;
  border: none;
   padding: 1rem;
   width: 240px;
+  border: 3px solid #39FF14;
+    box-shadow: 0px 0px 35px #39FF14, 0px 0px 15px #D705F2 inset;
+    background: #190125;
 }
 
 /* posts css*/
 .container-posts{
+    border: solid 1px #39ff14;
+    box-shadow:
+    0 0 3px #39FF14, 
+    0 0 9px #39FF14,
+    0 0 50px #39FF14;
+    margin: 0 300px 0px 100px;
+width: 70%;
 
-width: 100%;
-background: white;
 
 }

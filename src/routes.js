@@ -16,7 +16,7 @@ import CadastreSe from "./views/login/cadastro";
 
  function Routes(){
 
-    
+      const [apelido, setApelido] = useState(localStorage.getItem('apelido'))
 
             return(
                          <Switch>
@@ -25,7 +25,11 @@ import CadastreSe from "./views/login/cadastro";
                               <Route path="/home" exact component={Home} />
 
                              
-                               <Route path="/fanfics/posts"  exact component={GetAllPosts} />
+                              <Route path="/fanfics/posts">
+
+                              {apelido? <GetAllPosts/> : <Redirect to="/login"/>}
+
+                              </Route>
                                <Route path="/fanfics/create"  exact component={Create} />
                                <Route path="/fanfics/doe"  exact component={DoeFanfics} />
                               

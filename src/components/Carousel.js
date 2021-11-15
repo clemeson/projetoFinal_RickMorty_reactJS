@@ -49,6 +49,7 @@ function CarouselComponent(props){
          itemsToShow={card}
          showArrows={props.viewWidth == 1? true : false}
          pagination={props.viewWidth == 1? false : true}
+
          >
             
           {props.imagens.map((item, index)=>(   
@@ -56,7 +57,7 @@ function CarouselComponent(props){
 
         
                 <div>
-                    
+              
                 {props.text &&    
                 
                 <div className='card'>{item.name}<br/><LoadingBar time={.5}/>{item.type}<br/><LoadingBar/>{item.dimension}<br/><LoadingBar/></div>
@@ -65,6 +66,8 @@ function CarouselComponent(props){
                {item.image &&
               <img  className='imgCarousel' key={index} src={item.image}  onClick={(e)=>setHandleId(index +1)}/>
                }
+
+           
             </div>
           ))}
           
