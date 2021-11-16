@@ -42,7 +42,7 @@ function Sobre(){
                 <div id="text1">
                     <p className="text-about">Rick and Morty (em português Rick e Morty) é uma série de animação adulta norte-americana de comédia e ficção científica criada por <a id='links' href="https://pt.wikipedia.org/wiki/Justin_Roiland" target="_blank">Justin Roiland</a> e <a id='links' href="https://pt.wikipedia.org/wiki/Adult_Swim" target="_blank">Dan Harmon</a> para o bloco de programação noturno Adult Swim, exibido no canal Cartoon Network.</p>
                 </div>
-                    <img id='img1' src="https://azeheb.com.br/blog/wp-content/uploads/2017/10/rick-and-morty-e-a-ciencias.jpg" alt=""></img>
+                    <img id='img1' src="https://azeheb.com.br/blog/wp-content/uploads/2017/10/rick-and-morty-e-a-ciencias.jpg" alt=""></img>gi
             </section>
 
             <section id="pai3">
