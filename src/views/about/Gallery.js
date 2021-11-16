@@ -49,6 +49,10 @@ const images = [
     thumbnail: img1,
   },
   {
+    original: img2,
+    thumbnail: img2,
+  },
+  {
     original: img3,
     thumbnail: img3,
   },
