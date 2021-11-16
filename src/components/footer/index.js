@@ -1,10 +1,17 @@
 import React from "react";
-import "./respnsive.css"
+import { Link } from "react-router-dom";
+import "./style.css"
 
-export default function Footer(){
+
+function Footer(){
+
     return(
-        <footer>
-            <p>© Desenvolved by group of final project "Rick and Morty" Web App.</p>
+        <>
+        <footer id="fot">
+             <p id="paragrafoFooter">© 2021 - Start- Recife | Rick And Morty | Quer conhecer nossos desenvolvedores? <Link id="linkk" to="/quem-somos">Clique Aqui</Link></p>
         </footer>
+        </>
     )
 }
+
+export default Footer;
