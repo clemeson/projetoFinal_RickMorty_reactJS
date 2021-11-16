@@ -1,10 +1,10 @@
 
 @media (max-width: 1400px){
     .img_tabela{
-        width: 280px;
+        width: 380px;
     }
     .container_text{
-        height: 380px;
+        height: 480px;
     }
 }
 
@@ -29,7 +29,7 @@
         width: 460px;
     }
 }
-@media (max-width: 280px){
+@media (max-width: 880px){
 
     .container-topo{
         
@@ -46,25 +46,25 @@
         
     }
     .img_black{
-        width: 50px;
+        width: 250px;
         margin-left: 3px;
     }
 
     .container_text{
         height: 300px;
-        margin-left: 70px;
+        margin-left: 100px;
         min-width: 200px;
         font-size: 10px;
     }
     .img_tabela{
-        width: 210px;
+        width: 190px;
     }
     .img_container{
-       
-        width: 10px;
-       position: absolute;
-       left: -5px;
-       top: 150px;
+        
+        position: absolute;
+        top: 60px;
+        left: -10px;
+        
        z-index: -1;
     }
 }
