@@ -1,7 +1,7 @@
 import React,{useState, useEffect} from 'react'
 import {Route,Link} from "react-router-dom";
-import './styles.css/style.css'
-import './styles.css/responsive.css'
+import './styles/style.css'
+import './styles/responsive.css'
 import api from '../../services/apiForum'
 import MenuFanfics from './Menu'
 

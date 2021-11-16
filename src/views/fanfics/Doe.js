@@ -1,6 +1,8 @@
 import React,{useState, useEffect} from 'react';
 import api from '../../services/apiForum'
 import MenuFanfics from './Menu'
+import './styles/style.css'
+import './styles/responsive.css'
 
 
 

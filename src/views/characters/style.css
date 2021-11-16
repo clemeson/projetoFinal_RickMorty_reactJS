@@ -1,5 +1,10 @@
 
 
+.container-welcome{
+  font-size: 30px;
+  color: white;
+
+}
 .containerCharacter{
   height: 100%;
   width: 70%;

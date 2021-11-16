@@ -3,7 +3,7 @@
     margin: 0 auto;
     align-items: center;
     justify-content:center;
-    gap: 3.2rem;
+    gap: 2.2rem;
    
 }
 
@@ -22,15 +22,7 @@
 }
 
 
-.textarea{
-    width: 100%;
-    margin: 0 auto;
-    height: 300px;
-  
 
-  
-   
-}
 
 .main-fanfics{
     height:100%;
@@ -39,26 +31,7 @@
     display: flex;
 }
 
-.insert-text{
-    height: 400px;
-    width: 600px;
-    padding: 1.2rem;
-    border: none;
-    color: white;
-    outline: none;
-    background: rgb(83, 81, 81);
-    font-size: 20px;
-    border-radius: 3px;
-    border-radius: 8px;
-    border: solid 1px #39ff14;
-    box-shadow:
-    0 0 3px #39FF14, 
-    0 0 9px #39FF14,
-    0 0 50px #39FF14;
-}
-.label{
-    color: white;
-}
+
 .form-forum{
     width: 100%;
     display: flex;;
@@ -71,13 +44,18 @@
     padding: 1rem;
     border: none;
     outline: none;
-    box-shadow: 0px 0px 35px , 0px 0px 15px #5b1766 inset;
     font-size: 20px;
     font-weight: bold;
     border-radius: 3px;
     margin-bottom: 30px;
+   
     
   }
+  .insert-text-title::placeholder{
+      color: black;
+  }
+
+
 .sidebar-fanfics{
     width: 20%;
     margin-left: 60px;
@@ -105,8 +83,9 @@
 .container-forum{
     margin: 0 auto;
     padding-top: 140px;
-    width: 100%;
+    width: 70%;
     display:flex;
+    padding-left: 10px;
 }
 
 
@@ -140,30 +119,120 @@
 .container-posts{
     border: solid 1px #39ff14;
     box-shadow:
-    0 0 3px #39FF14, 
-    0 0 9px #39FF14,
-    0 0 50px #39FF14;
-    margin: 0 300px 0px 100px;
-width: 70%;
+    0 0 1px #39FF14, 
+    0 0 1px #39FF14,
+    0 0 10px #39FF14;
+    background: #202125;
+    width: 500px;
+    height: 500px;
+    padding: 1.5rem;
+    overflow:auto;
 
 
 }
+
+
 /* edit carousel*/
 
 .cards-titles{
-    color: #140220;
-   
+    color: #f9f8fa;
+  
+  
+    background:rgb(83, 81, 81);
+    border-radius: 3px;
     font-weight: bold;
+
     font-size: 22px;
     text-align: center;
-    background: #39FF14;
-    width: 300px;
+    
+
     height: 50px;
 }
 .rec-slider-container{
    height: 100%;
+   overflow:auto;
 }
 
 .sc-eCImPb .jMNKZk {
     height: 100vh;
+    overflow:auto;
+}
+
+.card-fanfics{
+    padding: 12px;
+    width: 270px;
+    text-align: center;
+   
+}
+
+/* posts*/
+
+
+
+.title-notes{
+ 
+height: 70px;
+font-size: 30px;
+font-weight: bold;
+text-align: center;
+margin-top: 20px;
+
+}
+
+
+.posts-notes{
+        font-size: 18px;
+}
+
+
+/*container carousel*/
+
+
+.container-Carousel{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
+
+  
+}
+
+.title-carousel{
+    font-size:24px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+
+
+/* create*/
+.textarea{
+    width: 100%;
+    margin: 0 auto;
+    height: 300px;
+  
+
+  
+   
+}
+
+.insert-text{
+    height: 400px;
+    width: 600px;
+    padding: 1.2rem;
+    border: none;
+    color: white;
+    outline: none;
+    background: #202125;
+    font-size: 20px;
+    border-radius: 3px;
+    border-radius: 8px;
+    border: solid 1px #39ff14;
+    box-shadow:
+    0 0 3px #39FF14, 
+    0 0 9px #39FF14,
+    0 0 50px #39FF14;
+}
+.label{
+    color: white;
 }

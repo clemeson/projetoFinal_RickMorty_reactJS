@@ -3,7 +3,7 @@ import React from "react";
 import {Link} from 'react-router-dom'
 import './header.css'
 import Btn from "./btn/Btn";
-import Logo from './img/logo_rick.png';
+import Logo from './img/logo_rick.svg';
 import Icon from './img/icon-menu.svg';
 import LoadingBar from "../LoadingBar";
 
@@ -45,7 +45,7 @@ export default function Header() {
                         <Link className="link" to="/about"><Btn text='Sobre a Série'/></Link>
                         </li>
                         <li>
-                        <Link className="link" to="/fanfics/posts"><Btn text='Fanfics'/></Link>
+                        <Link className="link" to="/fanfics/posts"><Btn text='Fanfiction'/></Link>
                         </li>
                     </ul>  
                 </nav>

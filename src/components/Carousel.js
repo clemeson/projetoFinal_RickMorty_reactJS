@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState,useEffect } from 'react'
 import Carousel from 'react-elastic-carousel'
-import styled from 'styled-components'
+
 import LoadingBar from './LoadingBar'
 
 
@@ -18,6 +18,7 @@ function CarouselComponent(props){
     const [handleId, setHandleId] = useState('')
     const [vw, setVw] = useState(window.innerWidth)
     const [card, setCard] = useState(4)
+    const [inicia, setIncial] = useState('')
     //pega click e envia id da foto clickada para o arquivo que enviou a funcao na props // personagens
     useEffect(()=>{
         if(props.getId){
@@ -59,22 +60,26 @@ function CarouselComponent(props){
         <>
         <Carousel
          itemsToShow={card}
-         showArrows={true}
+         showArrows={false}
          pagination={props.viewWidth == 1? false : true}
-        verticalMode={props.vertical}
-
+         verticalMode={props.vertical}
          >
             
+
+
           {props.imagens.map((item, index)=>(   
 
 
-        
-                <div>
+            
+         
+          
+                <div>   
               
                      {item.title &&    
-                 
-                 <div className='card' onClick={e => setIdFanfiction(item._id)} ><p className="cards-titles" >{item.title}</p></div>
-
+                  <>
+                 <div className='card-fanfics' onClick={e => setIdFanfiction(item._id)} ><p className="cards-titles" >{item.title}</p></div>
+             
+                        </>
                   } 
 
 
@@ -90,6 +95,8 @@ function CarouselComponent(props){
 
            
             </div>
+
+        
           ))}
           
         </Carousel>

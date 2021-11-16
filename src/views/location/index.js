@@ -4,6 +4,7 @@ import CarouselComponent from '../../components/Carousel'
 import './style.css'
 import LoadingComponent from '../../components/Loading'
 import Footer from "../../components/footer";
+import './responsive.css'
 
 
 
@@ -72,14 +73,13 @@ function Location() {
         <LoadingComponent />
         }
 
-               <div className="div-text">
+               <div className="div-text-location">         
+
+               <p className="text-1-location"> Veja os locais do universo Rick & Morty por tipos de lugares</p>
+
+
+
               
-                <p className="text-1"> Ninguém existe de propósito, ninguém pertence a lugar algum.</p>
-
-               <p className="text-1"> Veja os lugares do universo Rick & Morty</p>
-
-                <p className="text-2"> Ninguém existe de propósito, ninguém pertence a lugar nenhum! </p>
-                <p className="text-byRick"> By Rick Sanchez</p>
 
                 </div>
             <div class="container-dimensoes">
@@ -107,6 +107,10 @@ function Location() {
                      >
                 
                     </CarouselComponent>
+                    <div className="div-text2-location">
+                    <p className="text-2-location"> Ninguém existe de propósito, ninguém pertence a lugar nenhum! </p>
+                    <p className="text-byRick"> By Rick Sanchez</p>
+                     </div>
               
             </div>
        

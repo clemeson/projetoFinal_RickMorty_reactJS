@@ -4,7 +4,7 @@ import ModalComponent from '../../components/Modal';
 import api from "../../services/api";
 import './style.css';
 import LoadingComponent from "../../components/Loading";
-import Footer from "../../components/footer";
+
 
 
 
@@ -60,27 +60,23 @@ import Footer from "../../components/footer";
         get(character)
     }, [id])
     
-    function EscolhaUmPersona(){
-        return(
-            <div className="container-welcome">
-                <h1>Escolha um personagem, clicando na foto</h1>
-                
-            </div>
-        )
-    }
+
 
     return (
         <>
         <div className="containerCharacter">
 
-        
+        <div className="container-welcome">
+                <h1>Escolha um personagem, clicando na foto</h1>
+                
+            </div>
         {loading &&
         
             <LoadingComponent></LoadingComponent>
 
 
         }
-        <EscolhaUmPersona></EscolhaUmPersona>
+       
 
                 <CarouselComponent imagens={character}   qtItems={5}  getId={handleImageId} />
             <ModalComponent

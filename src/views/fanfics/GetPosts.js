@@ -2,6 +2,9 @@ import React,{useState, useEffect} from 'react';
 import api from '../../services/apiForum'
 import MenuFanfics from './Menu'
 import CarouselComponent from '../../components/Carousel';
+import './styles/responsive.css'
+import './styles/style.css'
+ 
 
 
 
@@ -66,7 +69,10 @@ import CarouselComponent from '../../components/Carousel';
         <MenuFanfics></MenuFanfics>
         
         <main className="main-fanfics">
-    
+          
+
+            <div className="container-Carousel">
+                <p className="title-carousel">Escolha uma História no Caroussel</p>
             <CarouselComponent 
             imagens = {allposts}
             vertical ={true}
@@ -75,24 +81,24 @@ import CarouselComponent from '../../components/Carousel';
 
                 
             </CarouselComponent>
-    
-        <div className="container-posts">
             
+            </div>
+        <div className="container-posts">
+           
             {post.map((i)=>(
                 <>
-                <p>{i.title}  </p>
-                <p> {i.notes} </p>
+                <p className="title-notes">{i.title}  </p>
+                <p className="posts-notes"> {i.notes} </p>
                 </>
             ))}
             
-        
 
         </div>
         </main>
         </section>
          </div>
         </>
-
+        
     )
 }
 
