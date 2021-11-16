@@ -14,6 +14,7 @@ import CarouselComponent from '../../components/Carousel';
     const [post, setPost] = useState([])
 
 
+
         async function getAllPosts(){
             const response = await api.get('/anotations/')
             console.log(response.data)
@@ -32,10 +33,20 @@ import CarouselComponent from '../../components/Carousel';
             })
         }
 
+      
 
+        function funId(getIdFun){
+            setId(getIdFun)
+        }
+     
         useEffect(() => {
             getPost(allposts)
 
+
+        },[id])
+
+        useEffect(()=>{
+            funId()
         },[id])
     
 
@@ -55,14 +66,16 @@ import CarouselComponent from '../../components/Carousel';
         <MenuFanfics></MenuFanfics>
         
         <main className="main-fanfics">
-        <sidebar className="sidebar-fanfics">
-        {allposts.map((i)=>(
-                <>
-                <p className="mural-seide" onClick={ e => setId(i._id)}> {i.title} </p>
-               
-                </>
-            ))}
-        </sidebar>
+    
+            <CarouselComponent 
+            imagens = {allposts}
+            vertical ={true}
+            handleIdFun = {funId}
+            >
+
+                
+            </CarouselComponent>
+    
         <div className="container-posts">
             
             {post.map((i)=>(

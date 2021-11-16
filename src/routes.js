@@ -1,4 +1,4 @@
-import React, {useState}from "react";
+import React, {useState, useEffect}from "react";
 import { Switch, Route, Redirect} from "react-router-dom";
 import Personagens from "./views/characters";
 import Sobre from "./views/about";
@@ -15,9 +15,11 @@ import CadastreSe from "./views/login/cadastro";
 
 
  function Routes(){
-
-      const [apelido, setApelido] = useState(localStorage.getItem('apelido'))
-
+            const [apelido, setApelido] = useState('')
+            useEffect(() => {
+                  setApelido(localStorage.getItem('apelido'))
+            },[localStorage])
+            console.log(apelido)
             return(
                          <Switch>
 
