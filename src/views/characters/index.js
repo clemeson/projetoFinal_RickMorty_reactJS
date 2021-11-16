@@ -67,7 +67,7 @@ import LoadingComponent from "../../components/Loading";
         <div className="containerCharacter">
 
         <div className="container-welcome">
-                <h1>Escolha um personagem, clicando na foto</h1>
+                
                 
             </div>
         {loading &&
