@@ -1,37 +1,37 @@
 import React from "react";
-import "index.css"
+
 
 
 function QuemSomos(){
     return(
         <>
-            <main>
+            <main id="mainQuemSomos">
                 <div>
-                    <img src="" alt=""></img>
+                    <img id="imagem1" src="./bruno.jpg" alt=""></img>
                     <p>dsfdfdsdsf</p>
                     <p>dfdsfdsfds</p>
                     <p>dsfdsfds</p>
                 </div>
                 <div>
-                    <img src="" alt=""></img>
+                    <img id="imagem2" src="./clemersson.jpg" alt=""></img>
                     <p>dsfdsfds</p>
                     <p>dfdsfdsfsdfs</p>
                     <p>dsfdsfdsfsdf</p>
                 </div>
                 <div>
-                    <img src="" alt=""></img>
+                    <img id="imagem3" src="./eduarda.jpg" alt=""></img>
                     <p>sdfdsfdsfsdf</p>
                     <p>sdfdsfdfdsf</p>
                     <p>dsfdsfdsfdsf</p>
                 </div>
                 <div>
-                    <img src="" alt=""></img>
+                    <img id="imagem4" src="./marcos.png" alt=""></img>
                     <p>dsfdsfdsfdsf</p>
                     <p>dsfdsfsfdsf</p>
                     <p>sdfdsfdsfds</p>
                 </div>
                 <div>
-                    <img src="" alt=""></img>
+                    <img id="imagem5" src="./luiz.jpg" alt=""></img>
                     <p>dsfdsfsfdsf</p>
                     <p>sdfdsfdsfsdf</p>
                     <p>sdfdsfdsfds</p>

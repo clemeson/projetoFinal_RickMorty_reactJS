@@ -9,7 +9,7 @@ import PageNotFound from './views/notfound/index'
 import Create from './views/fanfics/Create'
 import GetAllPosts from './views/fanfics/GetPosts'
 import DoeFanfics from './views/fanfics/Doe'
-
+import Quemsomos from './views/team/index'
 import Login from "./views/login";
 import CadastreSe from "./views/login/cadastro";
 
@@ -29,7 +29,7 @@ import CadastreSe from "./views/login/cadastro";
                                <Route path="/fanfics/create"  exact component={Create} />
                                <Route path="/fanfics/doe"  exact component={DoeFanfics} />
                               
-
+                               <Route path="/quem-somos"  exact component={Quemsomos} />
 
                               <Route path="/character"  exact component={Personagens} />
                               <Route path="/location" exact component={Location} />
