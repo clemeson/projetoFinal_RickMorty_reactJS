@@ -31,18 +31,15 @@
     background: #170122;
     min-width: 650px;
     height: 480px;
+    max-width: 500px;
     display: flex;
     padding:60px 40px;
     text-align: center;
     line-height: 45px;
     flex-direction: column;
     align-items: center;
-  
-    
-
-    max-width: 50%;
     color:white;
-    font-size: 22px;
+    font-size: 1.6em;
     border: 3px solid #D705F2;
     box-shadow: 0px 0px 35px #D705F2, 0px 0px 15px #D705F2 inset;
 
@@ -55,14 +52,12 @@
   font-size: 20px;
   color: #140220;
   border-radius: 10px;
- cursor: pointer;
- border: none;
+  cursor: pointer;
+  border: none;
   padding: 1rem;
   width: 240px;
-
   background: #39FF14;
   animation: animeBtn 1.5s;
- 
 }
 
 
@@ -74,6 +69,7 @@
   height: 90%;
 
   width: 100%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -90,15 +86,12 @@
 
 
   #body{
-    
-    min-height: 300px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 10vh;
   }
   #sec-title{
-
     border-bottom: solid 3px #ffffffad;
     height: 90vh;
     display: flex;
@@ -106,17 +99,13 @@
     align-items: center;
    
   }
-
-
-
-
-#title{
-  padding: 50px;
-  font-size: 3em;
-  color: white;
-  text-shadow: 9px 9px 9px #000000;
-  max-width: 50vw;
+  #sec-title1{
+  border-bottom: solid 3px #ffffffad;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 #end-title{
   color: white;
   text-shadow: 9px 9px 9px black;
@@ -125,7 +114,6 @@
 }
 .sections{
   animation: gradient 10s ease alternate infinite;
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -196,8 +184,28 @@
     transition: 1s;
 }
 
-
- 
+@media (max-width: 800px) {
+  #title{
+      font-size: 4em;
+      margin: auto;
+      text-align: center;
+  }
+  #end-title{
+      text-align: center;
+  }
+  #sec-title2{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      height: 110vh;
+  }
+  #gifcell{
+      width: 100px;
+      margin-left: 0px;
+  }
+  #squanch{
+      display: none;
+  }
   
   .sections{
       display: flex;
@@ -219,17 +227,13 @@
   margin-right: -20%;
 }
 
-
-
-
 #link{
     margin-left: 10%;
     margin-top: -10%;
     padding: 7%;
 }
 
-
 .img_tabela{
  width: 500px;
 }
-
+}
