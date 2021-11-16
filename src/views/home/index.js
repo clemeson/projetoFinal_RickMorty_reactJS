@@ -57,7 +57,7 @@ export default function Home() {
                             <img className="img_black" src={img_black} />
                         </div>
                     </div>
-                    <a href="#sec-title1" className="container-down" ><img class="icon-down" src={iconDown}/></a>
+            
                 </section>
 
 
@@ -72,7 +72,7 @@ export default function Home() {
                         </div>
                     </div>
                   
-                    <a href="#sec-title1" className="container-down" ><img class="icon-down" src={iconDown}/></a>
+                    
                 </section>
                 <section id='sec-title'>
                     <div className="container-topo">
@@ -85,7 +85,7 @@ export default function Home() {
                             <p id='sms-link'>Cique aqui para ser redirecionado à página de personagens.</p>
                         </div>
                     </div>
-                    <a href="#sec-title1" className="container-down" ><img class="icon-down" src={iconDown}/></a>
+                    
                 </section>
 
                 <section id='sec-title'>
@@ -98,7 +98,7 @@ export default function Home() {
                             <img className="img_black7" src={rickhead } />
                         </div>
                     </div>
-                    <a href="#sec-title1" className="container-down" ><img class="icon-down" src={iconDown}/></a>
+                   
                 </section>
 
                 <section id='sec-title'>
@@ -110,7 +110,7 @@ export default function Home() {
                             <img className="img_black4" src={gifcell } />
                         </div>
                     </div>
-                    <a href="#sec-title1" className="container-down" ><img class="icon-down" src={iconDown}/></a>
+                
                 </section>
                 <section id='sec-title'>
                     <div className="container-topo">
@@ -122,7 +122,7 @@ export default function Home() {
                             <a  href="https://play.hbomax.com/page/urn:hbo:page:home"  target="blank"> <img className="img_black8" src={hbo} /> </a>
                         </div>
                     </div>
-                    <a href="#sec-title1" className="container-down" ><img class="icon-down" src={iconDown}/></a>
+                  
                 </section>
             </div>
         </div>

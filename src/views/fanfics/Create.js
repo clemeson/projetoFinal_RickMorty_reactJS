@@ -13,10 +13,7 @@ function Create(){
     const [apelido, setApelido] = useState(localStorage.getItem('apelido'))
 
 
-    function setName(e){
-        localStorage.setItem('apelido', e.target.value)
 
-    }
 
 
     async function handleSubimit(e){
@@ -27,7 +24,14 @@ function Create(){
             notes
         })
 
+        setTitle('')
+        setNotes('')
+        
+
     }
+
+
+    
     return(
 
         <div className="container-forum">
@@ -41,7 +45,7 @@ function Create(){
             <div className="textarea">
                 <form className="form-forum" onSubmit={handleSubimit}>
                    
-                    <input required type="text" onChange={ e => setTitle(e.target.value)} className="insert-text-title" placeholder="Titulo da História"></input>
+                    <input required type="text" value={title} onChange={ e => setTitle(e.target.value)} className="insert-text-title" placeholder="Titulo da História"></input>
                     <textarea className="insert-text" value={notes} onChange={e => setNotes(e.target.value)} required>
 
                     </textarea>
