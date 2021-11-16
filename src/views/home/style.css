@@ -34,20 +34,15 @@
   }
   .container_text{
     background: #170122;
-    min-width: 250px;
-    height: 480px;
+    max-width: 500px;
     display: flex;
     padding:60px 40px;
     text-align: center;
     line-height: 45px;
     flex-direction: column;
     align-items: center;
-  
-    
-
-    max-width: 50%;
     color:white;
-    font-size: 22px;
+    font-size: 1.6em;
     border: 3px solid #D705F2;
     box-shadow: 0px 0px 35px #D705F2, 0px 0px 15px #D705F2 inset;
 
@@ -60,14 +55,12 @@
   font-size: 20px;
   color: #140220;
   border-radius: 10px;
- cursor: pointer;
- border: none;
+  cursor: pointer;
+  border: none;
   padding: 1rem;
   width: 240px;
-
   background: #39FF14;
   animation: animeBtn 1.5s;
- 
 }
 
 
@@ -77,7 +70,6 @@
   display: flex;
   align-items: center;
   height: 90%;
-
   width: 70%;
   margin: 0 auto;
 }
@@ -175,16 +167,12 @@
   }
   
   #body{
-    
-    min-height: 300px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 10vh;
   }
   #sec-title{
-
-    
     border-bottom: solid 3px #ffffffad;
     height: 90vh;
     display: flex;
@@ -192,12 +180,7 @@
     align-items: center;
    
   }
-
-
-  
   #sec-title1{
-
-  
   border-bottom: solid 3px #ffffffad;
   height: 90vh;
   display: flex;
@@ -221,7 +204,6 @@
 }
 .sections{
   animation: gradient 10s ease alternate infinite;
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -309,10 +291,6 @@
       flex-direction: column;
       margin: auto;
       height: 110vh;
-  }
-  h1{
-    font-size: 1.8em;
-    width: 100%;
   }
   #gifcell{
       width: 150px;
