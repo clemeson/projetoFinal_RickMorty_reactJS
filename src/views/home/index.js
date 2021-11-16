@@ -10,7 +10,7 @@ import './responsive.css'
 import frame from './img/frame.png';
 import { useEffect, useState } from "react/cjs/react.development";
 import ModalComponent from '../../components/Modal';
-import Footer from "../../components/footer";
+
 
 
 

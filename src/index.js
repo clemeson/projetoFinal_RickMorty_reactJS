@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2? family = M + PLUS + Arredondado + 1c: wght @ 500 & display = swap');
   
   #root{
-    height: 100vh;
+    height: 95vh;
  
     
    
