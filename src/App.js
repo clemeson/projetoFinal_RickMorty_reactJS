@@ -3,8 +3,8 @@ import {BrowserRouter} from 'react-router-dom'
 import Routes from './routes';
 import history from './services/history';
 import Header from './components/header/HeaderComponent'
+import Footer from './components/footer';
 import styled from 'styled-components';
-import Footer from './components/footer/index'
 
 
 

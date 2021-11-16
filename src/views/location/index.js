@@ -65,7 +65,7 @@ function Location() {
 
     
     return (
-        
+       
 
         <div className="container">
                  
@@ -77,11 +77,9 @@ function Location() {
 
                <p className="text-1-location"> Veja os locais do universo Rick & Morty por tipos de lugares</p>
 
-
-
-              
-
                 </div>
+
+                
             <div class="container-dimensoes">
 
                 <form className="form">
@@ -107,14 +105,10 @@ function Location() {
                      >
                 
                     </CarouselComponent>
-                    <div className="div-text2-location">
-                    <p className="text-2-location"> Ninguém existe de propósito, ninguém pertence a lugar nenhum! </p>
-                    <p className="text-byRick"> By Rick Sanchez</p>
-                     </div>
-              
-            </div>
+            
        
-            </div>
+                    </div>
+                    </div>
 
 
 
