@@ -10,8 +10,8 @@ import Create from './views/fanfics/Create'
 import GetAllPosts from './views/fanfics/GetPosts'
 import DoeFanfics from './views/fanfics/Doe'
 
-import Login from "./views/login";
-import CadastreSe from "./views/login/cadastro";
+
+
 
 
  function Routes(){
@@ -27,11 +27,10 @@ import CadastreSe from "./views/login/cadastro";
                               <Route path="/home" exact component={Home} />
 
                              
-                              <Route path="/fanfics/posts">
+                              <Route path="/fanfics/posts" exact component={GetAllPosts} />
 
-                              {apelido? <GetAllPosts/> : <Redirect to="/login"/>}
+                           
 
-                              </Route>
                                <Route path="/fanfics/create"  exact component={Create} />
                                <Route path="/fanfics/doe"  exact component={DoeFanfics} />
                               
@@ -43,8 +42,6 @@ import CadastreSe from "./views/login/cadastro";
                               <Route path="/about" exact component={Sobre} />
                               <Route path="/about/gallery" exact component={GalleryComponent} />
 
-                              <Route path='/login' exact component={Login}/>
-                              <Route path='/cadastre-se' exact component={CadastreSe}/>
 
 
                               <Route path="*"  component={PageNotFound} />
