@@ -1,4 +1,4 @@
-import React, {useState}from "react";
+import React, {useState, useEffect}from "react";
 import { Switch, Route, Redirect} from "react-router-dom";
 import Personagens from "./views/characters";
 import Sobre from "./views/about";
@@ -10,14 +10,18 @@ import Create from './views/fanfics/Create'
 import GetAllPosts from './views/fanfics/GetPosts'
 import DoeFanfics from './views/fanfics/Doe'
 import Quemsomos from './views/team/index'
-import Login from "./views/login";
-import CadastreSe from "./views/login/cadastro";
+
+
+
+
 
 
  function Routes(){
-
-    
-
+            const [apelido, setApelido] = useState('')
+            useEffect(() => {
+                  setApelido(localStorage.getItem('apelido'))
+            },[localStorage])
+            console.log(apelido)
             return(
                          <Switch>
 
@@ -25,7 +29,10 @@ import CadastreSe from "./views/login/cadastro";
                               <Route path="/home" exact component={Home} />
 
                              
-                               <Route path="/fanfics/posts"  exact component={GetAllPosts} />
+                              <Route path="/fanfics/posts" exact component={GetAllPosts} />
+
+                           
+
                                <Route path="/fanfics/create"  exact component={Create} />
                                <Route path="/fanfics/doe"  exact component={DoeFanfics} />
                               
@@ -37,8 +44,6 @@ import CadastreSe from "./views/login/cadastro";
                               <Route path="/about" exact component={Sobre} />
                               <Route path="/about/gallery" exact component={GalleryComponent} />
 
-                              <Route path='/login' exact component={Login}/>
-                              <Route path='/cadastre-se' exact component={CadastreSe}/>
 
 
                               <Route path="*"  component={PageNotFound} />

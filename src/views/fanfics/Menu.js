@@ -7,8 +7,9 @@ function MenuFanfics(){
 
     return(
         <>
-        
+
         <nav className="nav-forum">
+        <p>&#128525;</p> <p>Seja bem-vinde  {localStorage.getItem('apelido')}</p>
             <li>
                 <Link className="link" to="/fanfics/create">Criar</Link>
             </li>

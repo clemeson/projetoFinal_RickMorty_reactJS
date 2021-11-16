@@ -12,21 +12,33 @@ import LoadingBar from './LoadingBar'
 
 
 function CarouselComponent(props){
- 
 
     /*pega click da imagem, e retorn o id da imagem para o component pai*/
-
+    const [idFanfiction, setIdFanfiction] = useState('')
     const [handleId, setHandleId] = useState('')
     const [vw, setVw] = useState(window.innerWidth)
     const [card, setCard] = useState(4)
-    //pega click e envia id da foto clickada para o arquivo que enviou a funcao na props
+    //pega click e envia id da foto clickada para o arquivo que enviou a funcao na props // personagens
     useEffect(()=>{
         if(props.getId){
             (props.getId(handleId))
         }
     },[handleId])
 
+     //pega click e envia id da foto clickada para o arquivo que enviou a funcao na props // fanfiction
+
+  useEffect(() => {
     
+    if(props.handleIdFun){
+        props.handleIdFun(idFanfiction)
+      
+    }
+
+
+  },[idFanfiction])
+
+
+     //condicionais de exibicao por tamanho da tla
     useEffect(()=>{
          if(vw <= 360){
             setCard(1)
@@ -40,15 +52,17 @@ function CarouselComponent(props){
     
     },[window])
     //tentando fazer condicionais de exibicao por tamanho da tela
- 
+    
     return(
         
       
         <>
         <Carousel
          itemsToShow={card}
-         showArrows={props.viewWidth == 1? true : false}
+         showArrows={true}
          pagination={props.viewWidth == 1? false : true}
+        verticalMode={props.vertical}
+
          >
             
           {props.imagens.map((item, index)=>(   
@@ -56,7 +70,15 @@ function CarouselComponent(props){
 
         
                 <div>
-                    
+              
+                     {item.title &&    
+                 
+                 <div className='card' onClick={e => setIdFanfiction(item._id)} ><p className="cards-titles" >{item.title}</p></div>
+
+                  } 
+
+
+
                 {props.text &&    
                 
                 <div className='card'>{item.name}<br/><LoadingBar time={.5}/>{item.type}<br/><LoadingBar/>{item.dimension}<br/><LoadingBar/></div>
@@ -65,6 +87,8 @@ function CarouselComponent(props){
                {item.image &&
               <img  className='imgCarousel' key={index} src={item.image}  onClick={(e)=>setHandleId(index +1)}/>
                }
+
+           
             </div>
           ))}
           
