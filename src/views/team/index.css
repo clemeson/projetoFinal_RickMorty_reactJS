@@ -1,9 +1,22 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+#mainQuemSomos{
+    display: flex;
+    justify-content: space-around;
 }
-#imagem1{
-    width: 100px;
-    height: 250px;
+
+.imagem{
+    width: 180px;
+    height: 180px;
+    margin-top: 200px;
+    box-shadow: black 3px 3px 5px ;
+    border-radius: 200px;
+    
 }
+h3{
+    color: #39ff14;
+    margin-left: 20px;
+}
+.info{
+    text-align: center;
+    margin-top: 5px;
+}
+
