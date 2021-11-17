@@ -2,7 +2,6 @@
 
 import React from "react";
 import './style.css';
-
 import img_black from './img/bg_welcome.png';
 
 import './responsive.css'
