@@ -41,12 +41,12 @@ function CarouselComponent(props){
 
      //condicionais de exibicao por tamanho da tla
     useEffect(()=>{
-         if(vw <= 360){
+         if(vw <= 470){
             setCard(1)
         }
-        else if(vw <= 510){
+        else if(vw <= 950){
             setCard(2)
-        }else if(vw <= 720){
+        }else if(vw <= 1420){
             setCard(3)
         
         }

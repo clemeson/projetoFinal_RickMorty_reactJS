@@ -3,24 +3,27 @@
     font-size: 15px;
     font-weight: bold;
     display: inline-block;
-   
+    height: 60px;
+    padding-top: 20px;
+
     color: #39FF14;
     text-transform: uppercase;
     letter-spacing: 4px;
     text-decoration: none;
+    text-align: center;
     
     overflow: hidden;
-    transition: 0.2s;
+    transition: 0.3s;
 }
- #a:hover{
+#a:hover{
     color: #AB05F2;
     background: #39FF14;
     box-shadow:
     0 0 10px #39FF14, 
     0 0 40px #39FF14,
     0 0 80px #39FF14;
-    transition-delay: .8s;
-}
+    transition-delay: .85s;
+} 
 #a span{
     position: absolute;
     display: block;
@@ -37,7 +40,7 @@
 }
 #a:hover span:nth-child(1){
     left: 100%;
-    transition: .8s;
+    transition: .6s;
 }
 /* parte de baixo da animação */
 #a span:nth-child(3)
@@ -65,7 +68,7 @@
 #a:hover span:nth-child(2){
     top: 100%;
     transition: .8s;
-    transition-delay: 0.25s;
+    transition-delay: 0.2s;
 }
 /* parte da esquerda da animação */
 #a span:nth-child(4)
@@ -79,6 +82,6 @@
 #a:hover span:nth-child(4){
     bottom: 100%;
     transition: .8s;
-    transition-delay: 0.75s;
+    transition-delay: 0.7s;
 }
 

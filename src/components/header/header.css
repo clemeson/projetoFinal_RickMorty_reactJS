@@ -6,7 +6,7 @@ header, ul {
     padding: 0px;
 }
 #div-header{
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     background:#0b000cfb;
     z-index: 1000;
@@ -26,7 +26,8 @@ header, ul {
 }
 #header{
 
-    height: 100px;
+    height: 85px;
+    
     padding: 1rem;
     
    
@@ -50,8 +51,6 @@ header, ul {
 }
 #btn-menu{
     display: none;
-    width: 100px;
-    height: 70px;
     background: none;
     border: none;
     cursor: pointer;
